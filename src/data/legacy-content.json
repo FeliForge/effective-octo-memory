@@ -1,0 +1,1000 @@
+{
+  "china": {
+    "intro": "A China é uma das principais potências econômicas e geopolíticas do século XXI. Para compreender sua posição atual, é importante relacionar território, população, industrialização, reformas econômicas e desafios sociais e ambientais.",
+    "sections": [
+      {
+        "title": "1. Território, população e contrastes regionais",
+        "points": [
+          "A China está localizada no leste da Ásia e possui grande extensão territorial. Faz fronteira com 14 países e tem litoral voltado para o Oceano Pacífico.",
+          "O território apresenta contrastes: o oeste é mais elevado e montanhoso, com áreas como o Planalto do Tibete e desertos; o leste concentra planícies, grandes rios, cidades e atividades econômicas.",
+          "A população e a produção econômica se concentram principalmente no leste e no litoral. O interior possui densidades menores e maiores desafios de integração.",
+          "Pequim é a capital política. Xangai é um importante centro financeiro e portuário; Shenzhen tornou-se símbolo da industrialização tecnológica."
+        ]
+      },
+      {
+        "title": "2. Reformas econômicas e abertura",
+        "points": [
+          "Após 1949, a China organizou uma economia socialista planificada. A partir de 1978, sob a liderança de Deng Xiaoping, iniciou reformas que introduziram mecanismos de mercado e ampliaram a abertura ao capital estrangeiro.",
+          "As Zonas Econômicas Especiais (ZEEs), como Shenzhen, atraíram investimentos, empresas exportadoras e tecnologia. Sua localização costeira facilitou o comércio internacional.",
+          "O Estado continuou exercendo papel central, controlando setores estratégicos e planejando prioridades, mesmo com a expansão de empresas privadas e mercados.",
+          "A entrada na Organização Mundial do Comércio, em 2001, ampliou a integração chinesa às cadeias globais de produção."
+        ]
+      },
+      {
+        "title": "3. “A fábrica do mundo” e a potência tecnológica",
+        "points": [
+          "A industrialização chinesa foi impulsionada por mão de obra numerosa, infraestrutura, investimentos, exportações e políticas estatais.",
+          "O país passou de produtor de bens de baixo custo a competidor em setores como telecomunicações, veículos elétricos, painéis solares, baterias e inteligência artificial.",
+          "O crescimento econômico reduziu a pobreza extrema em larga escala, mas os benefícios foram distribuídos de forma desigual entre regiões e grupos sociais.",
+          "A dependência de mercados externos, disputas comerciais e restrições tecnológicas são desafios para a continuidade do crescimento."
+        ]
+      },
+      {
+        "title": "4. População e desafios sociais",
+        "points": [
+          "A política do filho único foi aplicada a partir do fim da década de 1970 e flexibilizada posteriormente. Ela contribuiu para a queda da natalidade e o envelhecimento populacional.",
+          "O sistema hukou registra a população por localidade e pode dificultar o acesso de migrantes internos a serviços públicos nas cidades onde trabalham.",
+          "A migração campo-cidade foi intensa: milhões de pessoas se deslocaram para áreas industriais e metropolitanas.",
+          "Persistem diferenças de renda e acesso a serviços entre litoral e interior, áreas urbanas e rurais."
+        ]
+      },
+      {
+        "title": "5. Meio ambiente e geopolítica",
+        "points": [
+          "A industrialização acelerada elevou a demanda por energia e provocou poluição atmosférica, contaminação de rios e emissões de gases de efeito estufa.",
+          "A China é simultaneamente uma grande emissora de gases de efeito estufa e uma das principais produtoras mundiais de tecnologias de energia renovável.",
+          "Rios como Yangtzé e Huang He são essenciais para abastecimento, agricultura, indústria e geração de energia.",
+          "No cenário internacional, a China amplia sua influência por meio do comércio, investimentos, infraestrutura e participação em organismos multilaterais."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "ZEE",
+        "Zona Econômica Especial: área com incentivos para atrair investimentos e produção voltada ao mercado externo."
+      ],
+      [
+        "Hukou",
+        "Sistema de registro domiciliar que vincula moradores a uma localidade e influencia o acesso a serviços."
+      ],
+      [
+        "Industrialização",
+        "Expansão da produção industrial e da participação da indústria na economia."
+      ]
+    ],
+    "faq": [
+      [
+        "A China é capitalista ou socialista?",
+        "O país é oficialmente socialista e mantém forte direção estatal, mas utiliza mercados, empresas privadas e investimentos internacionais. É frequentemente descrito como uma economia de mercado com características chinesas."
+      ],
+      [
+        "Por que o litoral é mais desenvolvido?",
+        "A proximidade de portos, rotas comerciais, infraestrutura e zonas especiais favoreceu a instalação de indústrias e serviços."
+      ],
+      [
+        "Qual é a importância de Shenzhen?",
+        "A cidade foi uma das primeiras ZEEs e tornou-se um polo de manufatura, tecnologia e inovação."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Curso Para conhecer a China — série de seis aulas",
+        "url": "https://www.youtube.com/playlist?list=PLXfuOBa194qY",
+        "playlistId": "PLXfuOBa194qY",
+        "source": "Fundação Perseu Abramo · aulas com o geógrafo Milton Pomar",
+        "note": "Use como uma interpretação entre outras e compare com materiais didáticos e dados independentes."
+      }
+    ],
+    "sources": [
+      {
+        "title": "China: governo, economia, cultura e território",
+        "url": "https://brasilescola.uol.com.br/geografia/china-1.htm",
+        "source": "Brasil Escola",
+        "note": "Panorama de localização, população, economia e industrialização."
+      },
+      {
+        "title": "Curso Para conhecer a China",
+        "url": "https://fpabramo.org.br/curso-para-entender-a-chinaesta-disponivel-no-youtube-da-fundacao-perseu-abramo-2/",
+        "source": "Fundação Perseu Abramo",
+        "note": "Curso audiovisual de seis aulas sobre história, economia e transformações recentes."
+      }
+    ]
+  },
+  "japao": {
+    "intro": "O Japão é um arquipélago asiático com território montanhoso, poucos recursos minerais e elevada concentração urbana. Sua trajetória combina reconstrução do pós-guerra, industrialização tecnológica e desafios demográficos.",
+    "sections": [
+      {
+        "title": "1. Localização, relevo e natureza",
+        "points": [
+          "O Japão fica no leste da Ásia, no Oceano Pacífico. É formado por milhares de ilhas, com quatro principais: Honshu, Hokkaido, Kyushu e Shikoku.",
+          "Grande parte do território é montanhosa, reduzindo as áreas disponíveis para agricultura e ocupação urbana.",
+          "O país está no encontro de placas tectônicas da Cintura de Fogo do Pacífico. Terremotos, vulcanismo e tsunamis são riscos naturais importantes.",
+          "A vulnerabilidade a desastres levou ao desenvolvimento de normas de construção, sistemas de alerta, treinamentos e planejamento urbano."
+        ]
+      },
+      {
+        "title": "2. População e urbanização",
+        "points": [
+          "A população concentra-se nas planícies costeiras, especialmente na faixa urbana e industrial do Pacífico.",
+          "A megalópole Tōkaidō conecta áreas metropolitanas como Tóquio, Nagoia e Osaka e concentra população, indústria, serviços e transportes.",
+          "O Japão enfrenta baixa natalidade e envelhecimento populacional. Isso reduz a proporção de pessoas em idade ativa e pressiona sistemas de saúde e previdência.",
+          "A automação, a participação de mulheres e idosos no trabalho e políticas de apoio às famílias são algumas respostas debatidas."
+        ]
+      },
+      {
+        "title": "3. Reconstrução e milagre econômico",
+        "points": [
+          "Após a Segunda Guerra Mundial, o Japão foi reconstruído com reformas internas, apoio econômico dos Estados Unidos e integração ao comércio internacional.",
+          "Entre as décadas de 1950 e 1980, o país teve crescimento industrial acelerado, com destaque para automóveis, eletrônicos, siderurgia e construção naval.",
+          "Educação, pesquisa, planejamento empresarial, investimento em tecnologia e exportações contribuíram para a competitividade.",
+          "A crise financeira iniciada no começo dos anos 1990 provocou longo período de crescimento lento, conhecido como “décadas perdidas”."
+        ]
+      },
+      {
+        "title": "4. Economia e dependência externa",
+        "points": [
+          "O Japão possui indústria avançada, mas depende da importação de parte significativa de seus combustíveis e matérias-primas.",
+          "A escassez de recursos naturais favoreceu uma economia baseada em tecnologia, eficiência produtiva, comércio e inovação.",
+          "Portos, ferrovias de alta velocidade e redes logísticas integram os principais centros econômicos.",
+          "A proximidade com China, Coreia do Sul e Taiwan torna o leste asiático uma região estratégica para comércio e segurança."
+        ]
+      },
+      {
+        "title": "5. Política e relações internacionais",
+        "points": [
+          "A Constituição de 1947 estabeleceu princípios pacifistas e renunciou à guerra como instrumento de política nacional.",
+          "O Japão mantém Forças de Autodefesa e uma aliança de segurança importante com os Estados Unidos.",
+          "O país é uma potência econômica e tecnológica e participa de organismos internacionais, embora tenha limitações constitucionais e debates internos sobre defesa."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Arquipélago",
+        "Conjunto de ilhas próximas entre si."
+      ],
+      [
+        "Megalópole",
+        "Grande área urbanizada formada pela integração de várias metrópoles."
+      ],
+      [
+        "Cintura de Fogo",
+        "Faixa do Pacífico com intensa atividade sísmica e vulcânica."
+      ]
+    ],
+    "faq": [
+      [
+        "Por que o Japão tem tantos terremotos?",
+        "Porque está próximo ao encontro de várias placas tectônicas, em uma região de intensa atividade geológica."
+      ],
+      [
+        "Por que importa matérias-primas?",
+        "Seu território possui reservas limitadas de muitos recursos minerais e energéticos, enquanto sua indústria demanda grandes quantidades."
+      ],
+      [
+        "O que é a Tōkaidō?",
+        "É o principal corredor urbano-industrial japonês, que reúne grandes cidades na costa do Pacífico."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Aula sobre Japão: aspectos naturais e humanos",
+        "url": "https://www.youtube.com/watch?v=IjVZFHXhDSg",
+        "youtubeId": "IjVZFHXhDSg",
+        "source": "Quadro Livre · Professor Rafael Barreto",
+        "note": "Explica clima, relevo, população e características econômicas do Japão."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Aspectos naturais do Japão",
+        "url": "https://brasilescola.uol.com.br/japao/geografia-japao.htm",
+        "source": "Brasil Escola",
+        "note": "Arquipélago, relevo, placas tectônicas, vulcanismo, clima e ocupação do território."
+      },
+      {
+        "title": "Japão: dados, economia e cultura",
+        "url": "https://brasilescola.uol.com.br/index.php/japao",
+        "source": "Brasil Escola",
+        "note": "Visão geral do país e de sua organização socioeconômica."
+      }
+    ]
+  },
+  "oceania": {
+    "intro": "A Oceania reúne a Austrália, a Nova Zelândia e milhares de ilhas do Pacífico. A região apresenta enorme diversidade natural e cultural, além de desigualdades históricas e grande vulnerabilidade às mudanças climáticas.",
+    "sections": [
+      {
+        "title": "1. Composição e regionalização",
+        "points": [
+          "A Oceania é formada pela Austrália, Nova Zelândia, Nova Guiné e numerosos arquipélagos do Oceano Pacífico.",
+          "Uma divisão regional tradicional identifica Australásia, Melanésia, Micronésia e Polinésia. Essas categorias combinam localização e referências histórico-culturais.",
+          "A Austrália ocupa a maior parte da área continental e é também um país. A Nova Zelândia é formada principalmente pelas ilhas Norte e Sul.",
+          "Papua-Nova Guiné ocupa a parte oriental da ilha da Nova Guiné; a parte ocidental pertence à Indonésia."
+        ]
+      },
+      {
+        "title": "2. Natureza e população",
+        "points": [
+          "A Austrália possui áreas áridas e semiáridas no interior, enquanto a população se concentra sobretudo nas regiões litorâneas.",
+          "A Nova Zelândia apresenta relevo montanhoso, vulcões e clima temperado. Muitas ilhas do Pacífico são vulcânicas ou formadas por atóis de coral.",
+          "A região abriga ecossistemas únicos, com espécies endêmicas que evoluíram em relativo isolamento.",
+          "Os povos aborígenes australianos, os povos maori e as comunidades das ilhas do Pacífico possuem histórias, línguas e culturas diversas."
+        ]
+      },
+      {
+        "title": "3. Colonização e povos originários",
+        "points": [
+          "A colonização europeia provocou apropriação de terras, conflitos, epidemias e profundas transformações políticas e culturais.",
+          "Na Austrália, políticas coloniais e a expansão dos assentamentos afetaram gravemente os povos aborígenes e suas relações com o território.",
+          "Na Nova Zelândia, a relação entre a Coroa britânica e os maori é marcada pelo Tratado de Waitangi (1840) e por disputas sobre sua interpretação e aplicação.",
+          "Atualmente, movimentos indígenas reivindicam reconhecimento, direitos territoriais, preservação de línguas e participação nas decisões."
+        ]
+      },
+      {
+        "title": "4. Economia e integração regional",
+        "points": [
+          "A Austrália possui economia desenvolvida, com mineração, agropecuária, serviços, educação e comércio internacional.",
+          "A Nova Zelândia se destaca por agropecuária, turismo, serviços e exportação de alimentos.",
+          "Muitos pequenos Estados insulares dependem de turismo, pesca, ajuda externa e remessas de pessoas que vivem no exterior.",
+          "A distância entre ilhas, mercados e centros logísticos aumenta custos de transporte e dificulta a oferta de serviços."
+        ]
+      },
+      {
+        "title": "5. Mudanças climáticas e desafios",
+        "points": [
+          "A elevação do nível do mar ameaça ilhas e atóis de baixa altitude, podendo provocar erosão costeira, salinização de fontes de água e deslocamentos populacionais.",
+          "O aquecimento dos oceanos e a acidificação ameaçam recifes de coral e atividades de pesca.",
+          "Ciclones tropicais, secas e eventos extremos afetam infraestrutura, agricultura e segurança alimentar.",
+          "Os países insulares defendem ações climáticas internacionais e financiamento para adaptação, pois contribuem pouco para as emissões globais, mas sofrem impactos intensos."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Atol",
+        "Ilha ou conjunto de ilhas coralinas que geralmente forma um anel ao redor de uma lagoa."
+      ],
+      [
+        "Endêmica",
+        "Espécie que ocorre naturalmente em uma área geográfica específica."
+      ],
+      [
+        "Salinização",
+        "Aumento da concentração de sais na água ou no solo."
+      ]
+    ],
+    "faq": [
+      [
+        "Quais são as três grandes regiões insulares tradicionais?",
+        "Melanésia, Micronésia e Polinésia."
+      ],
+      [
+        "Por que a população australiana se concentra no litoral?",
+        "O interior é majoritariamente árido ou semiárido; o litoral oferece melhores condições de água, clima, transporte e atividades econômicas."
+      ],
+      [
+        "Por que a elevação do mar é tão grave para os atóis?",
+        "Porque muitos têm baixa altitude e podem perder terras habitáveis, além de sofrer contaminação de reservas de água doce por água salgada."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Oceania: características gerais e localização",
+        "url": "https://www.youtube.com/watch?v=gcNbuQZaV0g",
+        "youtubeId": "gcNbuQZaV0g",
+        "source": "Explicador Virtual",
+        "note": "Videoaula sobre Austrália, Nova Zelândia e localização do continente."
+      },
+      {
+        "title": "Geopolítica: Oceania",
+        "url": "https://www.youtube.com/watch?v=W87wUi_97To",
+        "youtubeId": "W87wUi_97To",
+        "source": "Vivendo a Geografia · Orlando Castro",
+        "note": "Regionalização da Oceania e características do espaço geográfico."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Oceania: países, capitais, história e características",
+        "url": "https://brasilescola.uol.com.br/geografia/oceania.htm",
+        "source": "Brasil Escola",
+        "note": "Regionalização, população, economia e diversidade natural e cultural."
+      },
+      {
+        "title": "Material audiovisual sobre Oceania",
+        "url": "https://plurall-content.s3.amazonaws.com/oeds/NV_ORG/PNLD/PNLD20/Por_Dentro_Geografia/9ano/05_OUTROS_RECURSOS/08_VERSAO_FINAL/31_PDG_GEO_9ANO_Audiovisual_TRT.pdf",
+        "source": "Material Digital do Professor · Plurall",
+        "note": "Orientações didáticas para trabalhar a videoaula e a diversidade da Oceania."
+      }
+    ]
+  },
+  "onu": {
+    "intro": "A Organização das Nações Unidas foi criada após a Segunda Guerra Mundial para promover a paz, a cooperação internacional, os direitos humanos e o desenvolvimento sustentável. É um espaço de negociação entre países, mas suas decisões dependem de regras e da vontade política dos Estados.",
+    "sections": [
+      {
+        "title": "1. Origem, objetivos e princípios",
+        "points": [
+          "A Carta das Nações Unidas foi assinada em 1945 e a Organização começou a existir oficialmente em 24 de outubro daquele ano.",
+          "A ONU surgiu para evitar novos conflitos mundiais e criar mecanismos de cooperação entre os países.",
+          "Seus objetivos incluem manter a paz e a segurança internacionais, desenvolver relações amistosas, promover direitos humanos e coordenar ações diante de problemas globais.",
+          "A organização reúne Estados soberanos; não é um governo mundial e não substitui automaticamente a autoridade dos países."
+        ]
+      },
+      {
+        "title": "2. Estrutura institucional",
+        "points": [
+          "A Assembleia Geral reúne todos os Estados-membros, cada um com direito a um voto. É um fórum universal de debate, deliberação e recomendação, que também aprova o orçamento e elege membros de outros órgãos.",
+          "O Conselho de Segurança tem responsabilidade principal pela paz e segurança internacionais. Possui 15 membros: cinco permanentes e dez eleitos por períodos determinados.",
+          "China, Estados Unidos, França, Reino Unido e Rússia são os cinco membros permanentes do Conselho de Segurança e possuem direito de veto em decisões substantivas.",
+          "O Conselho Econômico e Social (ECOSOC) coordena debates e iniciativas de cooperação sobre temas econômicos, sociais e de desenvolvimento.",
+          "O Secretariado é conduzido pelo secretário-geral e coordena o trabalho administrativo e diplomático da Organização.",
+          "A Corte Internacional de Justiça, sediada em Haia, resolve disputas jurídicas entre Estados que aceitam sua jurisdição e emite pareceres consultivos. O Conselho de Tutela, criado para acompanhar territórios sob tutela, suspendeu suas operações em 1994."
+        ]
+      },
+      {
+        "title": "3. Agências, fundos e programas",
+        "points": [
+          "A ONU atua por meio de entidades especializadas e programas com funções próprias.",
+          "A UNICEF trabalha pelos direitos e pelo bem-estar de crianças e adolescentes; a UNESCO atua em educação, ciência e cultura.",
+          "A OMS coordena cooperação internacional em saúde; a FAO atua em alimentação e agricultura; o PNUMA trabalha com questões ambientais.",
+          "Essas entidades apoiam projetos, produzem dados, coordenam respostas e oferecem assistência técnica e humanitária."
+        ]
+      },
+      {
+        "title": "4. Paz, segurança e limites de atuação",
+        "points": [
+          "O Conselho de Segurança pode aprovar sanções, autorizar medidas coletivas e estabelecer operações de manutenção da paz.",
+          "As missões de paz são formadas por pessoal cedido pelos países e atuam com mandatos específicos, geralmente para proteger civis, apoiar acordos e monitorar cessar-fogos.",
+          "A ONU enfrenta limites: vetos, disputas entre potências, falta de recursos e dependência da cooperação dos Estados.",
+          "A Assembleia Geral possui grande importância diplomática, mas suas resoluções geralmente são recomendações, não leis obrigatórias para todos os países."
+        ]
+      },
+      {
+        "title": "5. Desenvolvimento sustentável e Brasil",
+        "points": [
+          "A Agenda 2030 reúne 17 Objetivos de Desenvolvimento Sustentável (ODS), que articulam combate à pobreza, saúde, educação, igualdade, meio ambiente e cooperação.",
+          "O Brasil é um dos 51 membros fundadores da ONU e participa de debates, missões e acordos internacionais.",
+          "A ONU não elimina conflitos por si só: sua efetividade depende de negociação, cumprimento de compromissos e pressão diplomática."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Estado-membro",
+        "País que integra formalmente a organização."
+      ],
+      [
+        "Veto",
+        "Poder de bloquear uma decisão substantiva do Conselho de Segurança, reservado aos cinco membros permanentes."
+      ],
+      [
+        "ODS",
+        "Objetivos de Desenvolvimento Sustentável definidos na Agenda 2030."
+      ]
+    ],
+    "faq": [
+      [
+        "Quantos países fazem parte da ONU?",
+        "São 193 Estados-membros."
+      ],
+      [
+        "Qual é a diferença entre Assembleia Geral e Conselho de Segurança?",
+        "A Assembleia reúne todos os membros e debate temas amplos; o Conselho tem responsabilidade principal por paz e segurança e pode adotar decisões específicas previstas na Carta."
+      ],
+      [
+        "A ONU pode obrigar qualquer país a fazer o que ela decide?",
+        "Não de forma geral. A força das decisões depende do órgão, da Carta da ONU e das obrigações internacionais assumidas pelos Estados."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Como funciona a estrutura da Organização das Nações Unidas?",
+        "url": "https://www.youtube.com/watch?v=UmSPW1EQzoo",
+        "youtubeId": "UmSPW1EQzoo",
+        "source": "Xadrez Verbal",
+        "note": "Apresenta os principais órgãos, agências e funções da ONU."
+      },
+      {
+        "title": "Geopolítica e o reordenamento do espaço mundial",
+        "url": "https://centrodemidias.am.gov.br/aulas/geopolitica-e-o-reordenamento-do-espaco-mundial",
+        "source": "Centro de Mídias de Educação do Amazonas",
+        "note": "Aula de Ensino Médio que aborda organizações internacionais, incluindo a ONU."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sobre a ONU",
+        "url": "https://brasil.un.org/pt-br/279573-sobre-onu",
+        "source": "Nações Unidas no Brasil",
+        "note": "Objetivos, pilares de atuação, Estados-membros e estrutura institucional."
+      },
+      {
+        "title": "Órgãos da ONU",
+        "url": "https://unric.org/pt/orgaos-da-onu/",
+        "source": "Centro Regional de Informação das Nações Unidas",
+        "note": "Explicação dos seis órgãos principais e de suas funções."
+      }
+    ]
+  },
+  "geopolitica-ambiental": {
+    "intro": "A geopolítica ambiental estuda como os problemas ecológicos se relacionam com poder, economia, território e relações internacionais. Questões como clima, água, energia e biodiversidade ultrapassam fronteiras e exigem negociação entre países.",
+    "sections": [
+      {
+        "title": "1. O que é geopolítica ambiental?",
+        "points": [
+          "Geopolítica ambiental analisa disputas e acordos relacionados ao uso de recursos naturais e à proteção do meio ambiente.",
+          "Os recursos são distribuídos de forma desigual pelo planeta. Água, petróleo, minerais estratégicos, florestas e biodiversidade podem gerar cooperação ou conflitos.",
+          "Decisões ambientais envolvem governos, empresas, povos indígenas, organizações internacionais, cientistas e movimentos sociais.",
+          "A soberania nacional convive com problemas transfronteiriços: poluição, rios compartilhados, oceanos e mudanças climáticas."
+        ]
+      },
+      {
+        "title": "2. Mudanças climáticas e responsabilidades",
+        "points": [
+          "O aumento da concentração de gases de efeito estufa, sobretudo pela queima de combustíveis fósseis e mudanças no uso da terra, intensifica o aquecimento global.",
+          "Os impactos incluem ondas de calor, alterações nas chuvas, elevação do nível do mar, derretimento de geleiras e maior risco de alguns eventos extremos.",
+          "A responsabilidade histórica pelas emissões é desigual: países industrializados emitiram grandes quantidades ao longo de sua história, enquanto muitos países em desenvolvimento têm menor responsabilidade acumulada e maiores necessidades sociais.",
+          "O princípio das responsabilidades comuns, porém diferenciadas, reconhece que todos devem agir, mas levando em conta capacidades e responsabilidades distintas."
+        ]
+      },
+      {
+        "title": "3. Conferências e acordos internacionais",
+        "points": [
+          "A Conferência de Estocolmo (1972) colocou o meio ambiente na agenda diplomática global.",
+          "A Rio-92 fortaleceu o debate sobre desenvolvimento sustentável e resultou em acordos importantes, incluindo a Convenção do Clima e a Convenção sobre Diversidade Biológica.",
+          "O Protocolo de Kyoto (1997) estabeleceu metas de redução de emissões para países desenvolvidos participantes.",
+          "O Acordo de Paris (2015) busca limitar o aumento da temperatura média global, com compromissos nacionais de todos os países e revisões periódicas."
+        ]
+      },
+      {
+        "title": "4. Recursos naturais, energia e conflitos",
+        "points": [
+          "A transição energética amplia a procura por minerais usados em baterias, redes elétricas e tecnologias renováveis, como lítio, cobre, níquel e terras raras.",
+          "A exploração desses recursos pode gerar empregos e receitas, mas também impactos sobre água, solo, comunidades e biodiversidade.",
+          "Bacias hidrográficas compartilhadas exigem acordos para distribuir água e prevenir poluição entre países.",
+          "A segurança energética e o controle de rotas de transporte influenciam alianças, disputas e políticas externas."
+        ]
+      },
+      {
+        "title": "5. Florestas, biodiversidade e justiça ambiental",
+        "points": [
+          "Florestas tropicais armazenam carbono, regulam ciclos da água e abrigam grande biodiversidade. O desmatamento afeta o clima e comunidades locais.",
+          "A conservação envolve áreas protegidas, fiscalização, restauração, pesquisa e respeito aos direitos de povos indígenas e comunidades tradicionais.",
+          "Justiça ambiental significa reconhecer que grupos vulneráveis frequentemente sofrem impactos maiores, mesmo contribuindo menos para o problema.",
+          "Soluções precisam combinar proteção ambiental, redução da pobreza, participação social e alternativas econômicas sustentáveis."
+        ]
+      },
+      {
+        "title": "6. Brasil no cenário ambiental",
+        "points": [
+          "O Brasil possui grande biodiversidade, extensas florestas, água doce e matriz elétrica com participação relevante de fontes renováveis.",
+          "A Amazônia tem importância regional e global, mas sua gestão envolve soberania, fiscalização, atividades econômicas, direitos indígenas e cooperação internacional.",
+          "O país participa de conferências climáticas e negociações sobre biodiversidade, financiamento e desenvolvimento sustentável.",
+          "O desafio é conciliar melhoria das condições de vida, produção econômica e conservação dos ecossistemas."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Desenvolvimento sustentável",
+        "Atender às necessidades atuais sem comprometer a capacidade das gerações futuras."
+      ],
+      [
+        "Mitigação",
+        "Ações para reduzir emissões ou ampliar a remoção de gases de efeito estufa."
+      ],
+      [
+        "Adaptação",
+        "Medidas para diminuir danos e preparar sociedades para impactos climáticos."
+      ],
+      [
+        "Justiça ambiental",
+        "Distribuição justa de riscos e benefícios ambientais, com participação das comunidades afetadas."
+      ]
+    ],
+    "faq": [
+      [
+        "Qual a diferença entre mitigação e adaptação?",
+        "Mitigação atua nas causas do aquecimento, reduzindo emissões; adaptação prepara pessoas e territórios para os impactos que já ocorrem ou são esperados."
+      ],
+      [
+        "Por que países discordam nas negociações climáticas?",
+        "Porque possuem responsabilidades históricas, capacidades econômicas, matrizes energéticas e prioridades de desenvolvimento diferentes."
+      ],
+      [
+        "O Acordo de Paris vale para todos?",
+        "Ele envolve praticamente todos os países, que apresentam compromissos nacionais e devem atualizá-los periodicamente."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Mudanças climáticas",
+        "url": "https://www.youtube.com/watch?v=1Y5WgGjUKdo",
+        "youtubeId": "1Y5WgGjUKdo",
+        "source": "Brasil Escola Oficial",
+        "note": "Explica causas e impactos das mudanças climáticas."
+      },
+      {
+        "title": "Acordos internacionais e mudanças climáticas",
+        "url": "https://futura.frm.org.br/conteudo/midias-educativas/video/acordos-internacionais-e-mudancas-climaticas-rural-sustentavel",
+        "source": "Canal Futura",
+        "note": "Linha do tempo dos estudos e acordos internacionais sobre clima."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Acordo de Paris sobre o Clima",
+        "url": "https://brasil.un.org/pt-br/88191-acordo-de-paris-sobre-o-clima",
+        "source": "Nações Unidas no Brasil",
+        "note": "Objetivos, metas climáticas e responsabilidades dos países."
+      },
+      {
+        "title": "Educação ambiental e crise climática",
+        "url": "https://brasil.un.org/pt-br/314277-educa%C3%A7%C3%A3o-ambiental",
+        "source": "Nações Unidas no Brasil",
+        "note": "Relatórios e materiais sobre clima, poluição, biodiversidade e COP30."
+      },
+      {
+        "title": "A geopolítica ambiental",
+        "url": "https://brasilescola.uol.com.br/geografia/a-geopolitica-ambiental.htm",
+        "source": "Brasil Escola",
+        "note": "Relação entre industrialização, recursos naturais, debates ambientais e acordos internacionais."
+      }
+    ]
+  },
+  "jk-janio": {
+    "intro": "Entre 1956 e 1961, o Brasil viveu transformações econômicas e urbanas intensas. Juscelino Kubitschek prometeu acelerar o desenvolvimento; Jânio Quadros chegou ao poder com discurso moralizador, mas renunciou poucos meses depois, abrindo uma grave crise política.",
+    "sections": [
+      {
+        "title": "1. O governo Juscelino Kubitschek (1956–1961)",
+        "points": [
+          "JK assumiu a Presidência em 1956 com um projeto desenvolvimentista, defendendo crescimento econômico, industrialização e modernização da infraestrutura.",
+          "Seu lema “50 anos em 5” expressava a intenção de acelerar o desenvolvimento nacional durante um mandato de cinco anos.",
+          "O governo buscou conciliar investimentos públicos, capital privado nacional e investimento estrangeiro, especialmente na indústria.",
+          "O período foi marcado por otimismo, expansão urbana e construção de grandes obras, mas também por aumento de gastos e desequilíbrios econômicos."
+        ]
+      },
+      {
+        "title": "2. O Plano de Metas e Brasília",
+        "points": [
+          "O Plano de Metas organizou prioridades em energia, transporte, alimentação, indústria de base e educação. Brasília foi apresentada como meta-síntese.",
+          "A indústria automobilística cresceu com a instalação de montadoras e fornecedores, estimulando estradas, metalurgia e urbanização.",
+          "A construção de Brasília, inaugurada em 21 de abril de 1960, pretendia integrar o território e deslocar o centro político para o interior.",
+          "A nova capital foi projetada por Lúcio Costa e teve edifícios de Oscar Niemeyer; sua construção mobilizou trabalhadores conhecidos como candangos."
+        ]
+      },
+      {
+        "title": "3. Os primeiros sinais da crise econômica",
+        "points": [
+          "O crescimento foi acompanhado por inflação, aumento da dívida pública e externa e concentração de investimentos em determinadas regiões e setores.",
+          "A expansão rodoviária favoreceu a indústria automobilística, mas deixou outras formas de transporte relativamente menos priorizadas.",
+          "O desenvolvimento não beneficiou todos igualmente: persistiram desigualdades regionais, concentração de renda e problemas sociais urbanos.",
+          "Assim, os “anos dourados” também foram anos de tensões econômicas e políticas."
+        ]
+      },
+      {
+        "title": "4. Jânio Quadros: marketing político e crise",
+        "points": [
+          "Jânio venceu a eleição de 1960 com discurso de combate à corrupção e moralização da política. A vassoura tornou-se símbolo de sua campanha.",
+          "Sua imagem pública era construída com gestos teatrais, linguagem simples e aproximação com eleitores descontentes com os partidos tradicionais.",
+          "Na política externa, buscou maior autonomia diplomática, aproximando-se de países de diferentes blocos durante a Guerra Fria.",
+          "A condecoração de Ernesto “Che” Guevara e outras decisões provocaram críticas de setores conservadores e aliados políticos."
+        ]
+      },
+      {
+        "title": "5. Governo Jânio: polêmicas e renúncia",
+        "points": [
+          "Jânio adotou medidas moralizadoras e decisões de grande repercussão simbólica, mas teve dificuldades de construir apoio estável no Congresso.",
+          "Em 25 de agosto de 1961, renunciou à Presidência. A justificativa formal foi apresentada de modo breve, e as motivações continuam sendo debatidas por historiadores.",
+          "A renúncia não produziu a solução política que Jânio talvez esperasse: o vice-presidente João Goulart deveria assumir conforme a Constituição."
+        ]
+      },
+      {
+        "title": "6. A crise da sucessão e o parlamentarismo",
+        "points": [
+          "Setores militares e políticos se opuseram à posse de João Goulart, que estava em viagem oficial à China. Outros grupos defenderam o respeito à Constituição.",
+          "A Campanha da Legalidade, liderada por Leonel Brizola no Rio Grande do Sul, mobilizou apoio à posse constitucional do vice-presidente.",
+          "Em setembro de 1961, uma solução negociada implantou o parlamentarismo, reduzindo os poderes de Jango. Em 1963, um plebiscito restaurou o presidencialismo.",
+          "A crise revelou a fragilidade das instituições e as disputas sobre o rumo econômico e político do país."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Desenvolvimentismo",
+        "Projeto que prioriza crescimento econômico, industrialização e infraestrutura."
+      ],
+      [
+        "Plano de Metas",
+        "Programa de investimentos e objetivos do governo JK."
+      ],
+      [
+        "Parlamentarismo",
+        "Sistema em que o governo é chefiado por um primeiro-ministro responsável perante o Parlamento."
+      ],
+      [
+        "Campanha da Legalidade",
+        "Mobilização de 1961 em defesa da posse constitucional de João Goulart."
+      ]
+    ],
+    "faq": [
+      [
+        "O que significava “50 anos em 5”?",
+        "Era o lema de JK para acelerar a industrialização e a modernização do país em um mandato de cinco anos."
+      ],
+      [
+        "Brasília foi construída por quê?",
+        "Para interiorizar a capital, estimular a ocupação do Centro-Oeste e simbolizar um projeto de modernização nacional."
+      ],
+      [
+        "Por que a renúncia de Jânio gerou uma crise?",
+        "Porque setores militares tentaram impedir a posse do vice, João Goulart, e foi necessário um acordo político para resolver a sucessão."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Juscelino Kubitschek e o Plano de Metas",
+        "url": "https://www.youtube.com/watch?v=31lQHDOK0wc",
+        "youtubeId": "31lQHDOK0wc",
+        "source": "Doses da História",
+        "note": "Videoaula sobre o desenvolvimentismo, “50 anos em 5” e as metas de governo."
+      },
+      {
+        "title": "Renúncia de Jânio Quadros — De Lá Pra Cá",
+        "url": "https://curriculomais.educacao.sp.gov.br/Objeto/FichaTecnica/411",
+        "source": "EBC · Currículo+ da Secretaria da Educação de SP",
+        "note": "Vídeo histórico que analisa o governo e a renúncia de Jânio."
+      },
+      {
+        "title": "Jânio Quadros: os acontecimentos que levaram à renúncia",
+        "url": "https://www.camara.leg.br/radio/programas/357145-janio-quadros-os-acontecimentos-que-levaram-a-renuncia-em-1961/",
+        "source": "Rádio Câmara",
+        "note": "Série de reportagens com documentos sonoros e análise da crise sucessória."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Plano de Metas",
+        "url": "https://brasilescola.uol.com.br/historiab/plano-de-metas.htm",
+        "source": "Brasil Escola",
+        "note": "Setores estratégicos, industrialização, obras e consequências econômicas."
+      },
+      {
+        "title": "Governo Juscelino Kubitschek",
+        "url": "https://brasilescola.uol.com.br/historiab/governo-juscelino-kubitschek-jk.htm",
+        "source": "Brasil Escola",
+        "note": "Contexto do governo JK e do projeto desenvolvimentista."
+      },
+      {
+        "title": "Governo Jânio Quadros",
+        "url": "https://brasilescola.uol.com.br/historiab/governo-janio-quadros.htm",
+        "source": "Brasil Escola",
+        "note": "Política interna, política externa e renúncia."
+      }
+    ],
+    "syllabus": [
+      "O governo Juscelino Kubitschek",
+      "“50 anos em 5”",
+      "Os primeiros sinais da crise econômica",
+      "Jânio Quadros: marketing político e crise",
+      "O governo de Jânio Quadros: polêmicas e decepção",
+      "A crise política da sucessão"
+    ]
+  },
+  "anos-de-chumbo": {
+    "intro": "A ditadura civil-militar brasileira começou com o golpe de 1964 e terminou com a transição democrática em 1985. O período combinou autoritarismo, censura e repressão com projetos de modernização econômica, resistência social e disputas pela redemocratização.",
+    "sections": [
+      {
+        "title": "1. Da crise política ao golpe de 1964",
+        "points": [
+          "A renúncia de Jânio Quadros, em 1961, levou João Goulart à Presidência após uma crise sucessória e a adoção temporária do parlamentarismo.",
+          "Jango defendeu as Reformas de Base, que incluíam propostas agrária, urbana, educacional, fiscal e bancária. As propostas dividiram a sociedade e o Congresso.",
+          "Em meio à Guerra Fria, setores conservadores, parte do empresariado, grupos da imprensa e militares se opuseram ao governo, acusando-o de aproximar o país do comunismo.",
+          "Em 31 de março e 1º de abril de 1964, ocorreu o golpe que depôs João Goulart e iniciou o regime militar. O contexto envolveu também apoio e articulação de atores externos."
+        ]
+      },
+      {
+        "title": "2. O golpe consumado e o recuo da cidadania",
+        "points": [
+          "O novo regime alterou as instituições, restringiu a competição política e passou a governar também por Atos Institucionais.",
+          "O AI-1, de abril de 1964, permitiu cassações de mandatos e suspensão de direitos políticos. Em 1965, o AI-2 extinguiu os partidos existentes e estabeleceu o bipartidarismo: Arena e MDB.",
+          "Eleições presidenciais passaram a ser indiretas. A participação política foi limitada e opositores sofreram perseguição.",
+          "A cidadania foi restringida por censura, vigilância, prisões arbitrárias e limitações à organização política e sindical."
+        ]
+      },
+      {
+        "title": "3. Primeiras reações e oposição",
+        "points": [
+          "Estudantes, artistas, jornalistas, setores religiosos, intelectuais e trabalhadores organizaram manifestações e críticas ao regime.",
+          "Em 1968, protestos estudantis, greves e passeatas expressaram a insatisfação com o autoritarismo.",
+          "A Passeata dos Cem Mil, no Rio de Janeiro, tornou-se um marco da mobilização pública contra a repressão.",
+          "A oposição também ocorreu por meio de jornais, teatro, cinema, música, associações e redes de solidariedade."
+        ]
+      },
+      {
+        "title": "4. AI-5 e aprofundamento da repressão",
+        "points": [
+          "Em dezembro de 1968, o AI-5 ampliou os poderes do Executivo, permitiu o fechamento do Congresso, cassações e suspensão de garantias políticas.",
+          "A censura atingiu jornais, livros, músicas, filmes, peças teatrais e programas de televisão.",
+          "Órgãos de repressão monitoraram, prenderam e torturaram opositores. Houve mortes e desaparecimentos políticos, cujas histórias seguem sendo investigadas e lembradas.",
+          "A repressão não eliminou a resistência: movimentos culturais, familiares de perseguidos, organizações de direitos humanos e setores da sociedade continuaram atuando."
+        ]
+      },
+      {
+        "title": "5. Resistência e luta armada",
+        "points": [
+          "Diante do fechamento dos canais institucionais, alguns grupos escolheram a luta armada, realizando ações contra o regime.",
+          "Esses grupos eram minoritários em relação ao conjunto da oposição e foram duramente perseguidos pelas forças do Estado.",
+          "Também existiram formas não armadas de resistência: imprensa alternativa, mobilização estudantil, redes religiosas, sindicatos, produção cultural e denúncia internacional.",
+          "O estudo do período deve distinguir ações de grupos opositores da responsabilidade do Estado por violações de direitos humanos."
+        ]
+      },
+      {
+        "title": "6. Modernização conservadora e Milagre Econômico",
+        "points": [
+          "Entre aproximadamente 1968 e 1973, o Brasil registrou altas taxas de crescimento econômico, período conhecido como Milagre Econômico.",
+          "O crescimento foi apoiado por investimentos em infraestrutura, expansão industrial, crédito, capital externo e grandes obras.",
+          "O regime utilizou propaganda nacionalista e slogans ufanistas para associar crescimento econômico ao apoio político.",
+          "Os ganhos foram distribuídos de forma desigual: houve concentração de renda, arrocho salarial e manutenção de profundas desigualdades."
+        ]
+      },
+      {
+        "title": "7. Políticas agrária e industrial",
+        "points": [
+          "A política industrial favoreceu grandes projetos, empresas estatais, grupos privados e integração produtiva, com destaque para energia, transportes e bens de consumo duráveis.",
+          "No campo, a modernização agrícola ampliou mecanização e produtividade em determinadas áreas, mas também concentrou terras e expulsou trabalhadores rurais.",
+          "A expansão da fronteira agrícola e de grandes projetos alterou territórios, ecossistemas e modos de vida de comunidades tradicionais.",
+          "O crescimento urbano acelerado trouxe desafios de moradia, saneamento, transporte e acesso a serviços."
+        ]
+      },
+      {
+        "title": "8. Crise do regime e abertura política",
+        "points": [
+          "A crise do petróleo de 1973 elevou custos de energia e importações. O endividamento externo e a inflação aumentaram as dificuldades econômicas.",
+          "No governo Ernesto Geisel (1974–1979), iniciou-se uma abertura anunciada como lenta, gradual e segura, conduzida pelo próprio regime e marcada por avanços e recuos.",
+          "A Lei da Anistia foi aprovada em 1979 e permitiu o retorno de exilados e a libertação de parte dos perseguidos, mas sua abrangência e efeitos continuam sendo debatidos.",
+          "O fim do bipartidarismo permitiu reorganização partidária e maior competição política."
+        ]
+      },
+      {
+        "title": "9. Trabalhadores, crise econômica e redemocratização",
+        "points": [
+          "Greves no ABC paulista, especialmente entre 1978 e 1980, reivindicaram melhores salários e autonomia sindical, fortalecendo a mobilização dos trabalhadores.",
+          "A inflação, a dívida externa e a perda do poder de compra tornaram a crise econômica parte central do debate público.",
+          "Em 1984, a campanha Diretas Já mobilizou milhões de pessoas em defesa de eleições diretas para presidente. A emenda não foi aprovada naquele momento.",
+          "Tancredo Neves foi eleito indiretamente em 1985, mas morreu antes da posse. José Sarney assumiu e conduziu a transição civil; a Constituição de 1988 consolidou a nova ordem democrática."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Ato Institucional",
+        "Instrumento imposto pelo regime para alterar regras políticas e ampliar poderes do governo."
+      ],
+      [
+        "AI-5",
+        "Ato de dezembro de 1968 que aprofundou o autoritarismo e a repressão."
+      ],
+      [
+        "Milagre Econômico",
+        "Período de crescimento acelerado, especialmente entre 1968 e 1973, acompanhado por desigualdade e endividamento."
+      ],
+      [
+        "Anistia",
+        "Medida legal que perdoa determinados crimes ou punições; a lei brasileira de 1979 é objeto de debate histórico e jurídico."
+      ]
+    ],
+    "faq": [
+      [
+        "O golpe aconteceu em 31 de março ou 1º de abril de 1964?",
+        "A movimentação militar começou em 31 de março e a deposição de João Goulart se consolidou em 1º de abril. Por isso as duas datas aparecem em fontes históricas."
+      ],
+      [
+        "O que tornou o AI-5 tão importante?",
+        "Ele ampliou drasticamente os poderes do Executivo e intensificou a censura, as cassações e a repressão política."
+      ],
+      [
+        "O Milagre Econômico beneficiou toda a população igualmente?",
+        "Não. Apesar do crescimento, houve concentração de renda, arrocho salarial e desigualdade."
+      ],
+      [
+        "Quando terminou a ditadura?",
+        "A transição civil ocorreu em 1985; a Constituição de 1988 consolidou a redemocratização institucional."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "Tudo sobre a Ditadura Militar (1964–1985)",
+        "url": "https://www.youtube.com/watch?v=0A8fvJKzhcc",
+        "youtubeId": "0A8fvJKzhcc",
+        "source": "Débora Aladim · canal verificado",
+        "note": "Aula extensa que percorre o golpe, AI-5, repressão, economia e abertura política."
+      },
+      {
+        "title": "Ditadura civil e militar — História (Ensino Médio)",
+        "url": "https://futura.frm.org.br/conteudo/educacao-basica/video/ditadura-civil-e-militar-historia-ensino-medio",
+        "source": "Fundação Roberto Marinho / Canal Futura",
+        "note": "Material audiovisual educativo sobre a ditadura brasileira."
+      },
+      {
+        "title": "Show da História — Especial ditadura militar",
+        "url": "https://futura.frm.org.br/conteudo/midias-educativas/video/show-da-historia-especial-ditadura-militar",
+        "source": "Canal Futura",
+        "note": "Conteúdo audiovisual para ampliar a revisão do período."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Ditadura Militar no Brasil",
+        "url": "https://brasilescola.uol.com.br/historiab/ditadura-militar.htm",
+        "source": "Brasil Escola",
+        "note": "Golpe de 1964, Atos Institucionais, economia, repressão e redemocratização."
+      },
+      {
+        "title": "O que foi o AI-5?",
+        "url": "https://brasilescola.uol.com.br/historiab/ai5.htm",
+        "source": "Brasil Escola",
+        "note": "Contexto, medidas e consequências do Ato Institucional nº 5."
+      },
+      {
+        "title": "Ato Institucional nº 5",
+        "url": "https://www.gov.br/memoriasreveladas/pt-br/assuntos/destaques/ato-institucional-no-5",
+        "source": "Arquivo Nacional · Memórias Reveladas",
+        "note": "Documento e contexto histórico em fonte pública oficial."
+      }
+    ],
+    "syllabus": [
+      "“Mas eis que chega a roda viva...”",
+      "“...e carrega o destino pra lá”",
+      "“...o tempo rodou num instante”: o golpe consumado",
+      "“A gente estancou de repente”: o recuo da cidadania",
+      "“É preciso estar atento e forte”: primeiras reações ao golpe",
+      "“Hoje você é quem manda. Falou, tá falado. Não tem discussão”: o sufoco do AI-5",
+      "“Pai, afasta de mim esse cálice”: enfrentando a repressão",
+      "“Apaga teu rastro do chão”: a luta armada, uma opção radical",
+      "“Este é um país que vai pra frente”: a modernização conservadora",
+      "Políticas agrária e industrial",
+      "“Apesar de você, amanhã há de ser outro dia”: a crise do regime militar",
+      "“Vendo o céu clarear”: abertura lenta, gradual e segura",
+      "“Vendo o dia raiar”: os trabalhadores voltam a se organizar",
+      "“Você deve notar que não tem mais tutu”: economia em tempos ruins"
+    ]
+  },
+  "cultura-anos-60-70": {
+    "intro": "A cultura brasileira dos anos 1960 e 1970 foi marcada por criatividade, experimentação e disputas políticas. Durante a ditadura, artistas enfrentaram censura e repressão, mas encontraram maneiras diversas de expressar críticas e construir novas linguagens.",
+    "sections": [
+      {
+        "title": "1. Contexto cultural e político",
+        "points": [
+          "Os anos 1960 foram de intensa transformação mundial: movimentos juvenis, lutas por direitos civis, descolonização e contestação de costumes.",
+          "No Brasil, a produção cultural dialogava com desigualdades sociais, projetos de modernização, nacionalismo e conflitos políticos.",
+          "Após o golpe de 1964, a liberdade de expressão foi progressivamente restringida, sobretudo depois do AI-5, em 1968.",
+          "Mesmo sob censura, cinema, teatro, música, literatura, artes visuais e televisão continuaram produzindo críticas e interpretações do país."
+        ]
+      },
+      {
+        "title": "2. Música de protesto e festivais",
+        "points": [
+          "Os festivais de música transmitidos pela televisão revelaram compositores e intérpretes e transformaram canções em espaços de debate público.",
+          "Artistas como Geraldo Vandré, Chico Buarque, Elis Regina e Edu Lobo participaram de um cenário em que música e política frequentemente se encontravam.",
+          "Canções de protesto abordavam desigualdade, autoritarismo, liberdade e esperança. “Pra não dizer que não falei das flores”, de Geraldo Vandré, tornou-se símbolo desse contexto.",
+          "A MPB não era um movimento único: reunia estilos, propostas estéticas e posições políticas variadas."
+        ]
+      },
+      {
+        "title": "3. Tropicalismo e experimentação",
+        "points": [
+          "O Tropicalismo ganhou destaque em 1967–1968, com artistas como Caetano Veloso, Gilberto Gil, Gal Costa, Tom Zé e o grupo Os Mutantes.",
+          "O movimento misturou rock, samba, ritmos brasileiros, guitarras elétricas, cultura pop, referências eruditas e elementos considerados “bregas”.",
+          "A Tropicália questionava ideias rígidas de identidade nacional e propunha uma cultura aberta à mistura e à contradição.",
+          "Caetano Veloso e Gilberto Gil foram presos em 1968 e partiram para o exílio em Londres em 1969."
+        ]
+      },
+      {
+        "title": "4. Jovem Guarda, cinema e outras linguagens",
+        "points": [
+          "A Jovem Guarda, associada a Roberto Carlos, Erasmo Carlos e Wanderléa, popularizou uma versão brasileira do rock e da cultura juvenil.",
+          "O Cinema Novo, com cineastas como Glauber Rocha, explorou desigualdade, violência social e identidade nacional com linguagem inovadora.",
+          "O teatro de grupos como Arena e Oficina experimentou novas formas de encenação e debate político.",
+          "As artes visuais, a literatura e a televisão também participaram da construção de símbolos, críticas e imaginários da época."
+        ]
+      },
+      {
+        "title": "5. Censura, metáforas e duplo sentido",
+        "points": [
+          "A censura prévia submetia obras a órgãos do Estado antes de sua circulação. Letras, peças, filmes e notícias podiam ser cortados ou proibidos.",
+          "Artistas recorreram a metáforas, alegorias, ironia, personagens e duplos sentidos para comunicar críticas sem formulá-las diretamente.",
+          "“Apesar de Você”, de Chico Buarque, foi lançada em 1970 e interpretada como crítica ao regime; depois de inicialmente circular, acabou censurada.",
+          "A metáfora não garantia proteção: censores podiam reinterpretar uma obra, e artistas também praticavam autocensura por receio de punições."
+        ]
+      },
+      {
+        "title": "6. Luzes e trevas: legado cultural",
+        "points": [
+          "A expressão “luzes e trevas” sintetiza a coexistência de grande criatividade cultural com censura, perseguição e restrição de direitos.",
+          "A resistência cultural não ocorreu apenas em canções explicitamente políticas: também apareceu na experimentação estética, na sátira e na preservação de espaços de debate.",
+          "O legado do período inclui obras fundamentais da música, do cinema, do teatro e da literatura brasileira.",
+          "Estudar essas produções exige observar tanto sua linguagem artística quanto as condições políticas em que foram criadas."
+        ]
+      }
+    ],
+    "glossary": [
+      [
+        "Censura prévia",
+        "Controle estatal que analisa uma obra antes de sua publicação ou apresentação."
+      ],
+      [
+        "Alegoria",
+        "Representação de uma ideia por meio de imagens, personagens ou situações simbólicas."
+      ],
+      [
+        "Tropicalismo",
+        "Movimento cultural que misturou referências brasileiras e estrangeiras e experimentou novas linguagens."
+      ],
+      [
+        "Autocensura",
+        "Quando alguém limita a própria expressão por medo de punição ou pressão."
+      ]
+    ],
+    "faq": [
+      [
+        "Por que os artistas usavam metáforas?",
+        "Para criar sentidos indiretos e tentar comunicar críticas em um contexto de censura, embora isso não impedisse totalmente os cortes e proibições."
+      ],
+      [
+        "Tropicalismo era apenas música?",
+        "Não. Foi um movimento cultural amplo, com relações com artes visuais, teatro, cinema, poesia e comportamento."
+      ],
+      [
+        "Toda música popular da época era de protesto?",
+        "Não. Existiam diferentes estilos e propostas, como MPB, Jovem Guarda, Tropicalismo e música romântica, com temas variados."
+      ]
+    ],
+    "videos": [
+      {
+        "title": "História da música brasileira: censura musical na ditadura",
+        "url": "https://www.youtube.com/watch?v=V15O-bzSGYQ",
+        "youtubeId": "V15O-bzSGYQ",
+        "source": "Ebis Dias Filho · entrevista com historiador",
+        "note": "Entrevista sobre censura e produção musical no período."
+      },
+      {
+        "title": "A música nos anos de chumbo",
+        "url": "https://futura.frm.org.br/conteudo/educacao-basica/video/musica-nos-anos-de-chumbo-artes-ensino-medio",
+        "source": "Fundação Roberto Marinho / Canal Futura",
+        "note": "Videoaula sobre música, censura e cultura durante a ditadura."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Canção de protesto no Brasil",
+        "url": "https://educador.brasilescola.uol.com.br/estrategias-ensino/cancao-protesto-no-brasil.htm",
+        "source": "Brasil Escola",
+        "note": "Música engajada e seu papel no debate político."
+      },
+      {
+        "title": "Tropicalismo e ruptura cultural no Brasil",
+        "url": "https://educador.brasilescola.uol.com.br/estrategias-ensino/tropicalismo-ruptura-cultural-no-brasil.htm",
+        "source": "Brasil Escola",
+        "note": "Experimentação estética, identidade cultural e contexto histórico."
+      },
+      {
+        "title": "Música brasileira na ditadura",
+        "url": "https://memoriasdaditadura.org.br/musica-no-brasil-da-ditadura/",
+        "source": "Memórias da Ditadura",
+        "note": "Acervo temático sobre movimentos musicais, artistas e censura."
+      },
+      {
+        "title": "Música de protesto",
+        "url": "https://memoriasdaditadura.org.br/cultura/musica-de-protesto/",
+        "source": "Memórias da Ditadura",
+        "note": "Contexto da música de protesto e dos festivais."
+      }
+    ],
+    "syllabus": [
+      "Música de protesto",
+      "Trevas e repressão cultural",
+      "Metáforas para driblar a censura"
+    ]
+  }
+}
