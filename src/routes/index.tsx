@@ -39,89 +39,101 @@ function Home() {
     : null;
 
   return (
-    <div className="space-y-8">
-      <header className="space-y-2">
-        <p className="text-sm font-semibold text-primary">Prova bimestral</p>
-        <h1 className="font-display text-4xl font-semibold tracking-tight">
-          {name ? `Olá, ${name}` : "Estude o caderno inteiro"}
+    <div className="space-y-10">
+      <header className="space-y-3">
+        <h1 className="max-w-3xl text-5xl leading-[0.95] font-extrabold sm:text-6xl">
+          {name ? `Olá, ${name}. Vamos estudar?` : "Estude o caderno inteiro"}
         </h1>
-        <p className="max-w-2xl text-lg text-muted">
-          Geografia e História continuam aqui. Entraram Português, do módulo 35 ao 41, e Ciências, com Biologia, Física e Química.
+        <p className="max-w-xl text-lg text-muted">
+          Prova bimestral de Geografia, História, Português e Ciências. Cada matéria tem a sua cor de marca-texto.
         </p>
       </header>
 
-      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {continueModule ? (
+        <section
+          data-subject={continueModule.subject}
+          className="relative flex flex-col gap-5 overflow-hidden rounded-2xl border border-border bg-[var(--s-soft)] p-6 sm:flex-row sm:items-center sm:justify-between"
+          style={{ boxShadow: "4px 4px 0 var(--s)" }}
+        >
+          <div className="flex items-center gap-5">
+            <span className="cover-num text-7xl" aria-hidden="true">
+              {continueModule.number}
+            </span>
+            <div>
+              <p className="chip">{subjects[continueModule.subject].label}</p>
+              <h2 className="mt-2 text-2xl leading-tight font-extrabold">{continueModule.title}</h2>
+              <p className="text-sm text-muted">Continue de onde parou</p>
+            </div>
+          </div>
+          <Link to="/modulos/$slug" params={{ slug: continueModule.slug }} className="btn-primary shrink-0">
+            Abrir módulo
+          </Link>
+        </section>
+      ) : null}
+
+      <section className="grid grid-cols-2 divide-x divide-y divide-border overflow-hidden rounded-2xl border border-border bg-surface lg:grid-cols-4 lg:divide-y-0">
         <Stat label="Módulos lidos" value={`${Object.keys(read).length}/${modules.length}`} />
         <Stat label="Acertos" value={accuracy === null ? "—" : `${accuracy}%`} />
         <Stat label="Minutos na semana" value={String(weekMinutes)} />
         <Stat label="Perguntas feitas" value={String(attempts.length)} />
       </section>
 
+      <section className="space-y-4">
+        <h2 className="text-3xl font-extrabold">Por matéria</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {subjectOrder.map((subject) => {
+            const list = modules.filter((module) => module.subject === subject);
+            const done = list.filter((module) => read[module.slug]).length;
+            return (
+              <Link key={subject} to="/modulos" data-subject={subject} className="cover">
+                <h3 className="text-2xl font-extrabold">{subjects[subject].label}</h3>
+                <p className="text-sm text-muted">{subjects[subject].blurb}</p>
+                <p className="mt-4 text-sm font-bold">
+                  {done} de {list.length} lidos
+                </p>
+                <div className="subject-bar mt-2">
+                  <span style={{ width: `${list.length ? (done / list.length) * 100 : 0}%` }} />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <h2 className="text-3xl font-extrabold">Novos neste caderno</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          {fresh.map((module) => (
+            <Link key={module.slug} to="/modulos/$slug" params={{ slug: module.slug }} data-subject={module.subject} className="cover">
+              <div className="flex items-center justify-between gap-3">
+                <span className="cover-num text-4xl" aria-label={module.kicker}>
+                  {module.number}
+                </span>
+                <span className="chip">{subjects[module.subject].label}</span>
+              </div>
+              <h3 className="mt-2 text-lg leading-snug font-bold">{module.title}</h3>
+              <p className="text-sm text-muted">{read[module.slug] ? "Lido" : "Ainda não lido"}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="card">
-        <h2 className="font-display text-2xl font-semibold">Minutos de estudo · 7 dias</h2>
+        <h2 className="text-2xl font-extrabold">Minutos de estudo nos últimos 7 dias</h2>
         <div className="mt-4 grid grid-cols-7 gap-2">
           {days.map((day) => (
-            <div key={day.key} className="flex flex-col items-center gap-2">
-              <div className="flex h-28 w-full items-end rounded-xl bg-surface-2">
+            <div key={day.key} className="flex flex-col items-center gap-1.5">
+              <div className="flex h-28 w-full items-end rounded-lg bg-surface-2">
                 <div
-                  className="w-full rounded-xl bg-primary"
+                  className="w-full rounded-lg bg-primary"
                   style={{ height: day.minutes === 0 ? "0%" : `${Math.max(12, (day.minutes / maxMinutes) * 100)}%` }}
                 />
               </div>
               <span className="text-xs font-semibold text-muted">{day.label}</span>
-              <span className="text-xs">{day.minutes}</span>
+              <span className="text-xs font-bold">{day.minutes}</span>
             </div>
           ))}
         </div>
-      </section>
-
-      {continueModule ? (
-        <section className="card flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <p className="text-sm font-semibold text-primary">Continuar</p>
-            <h2 className="font-display text-2xl font-semibold">{continueModule.title}</h2>
-            <p className="text-sm text-muted">
-              {subjects[continueModule.subject].label} · {continueModule.kicker}
-            </p>
-          </div>
-          <Link to="/modulos/$slug" params={{ slug: continueModule.slug }} className="btn-primary">
-            Abrir módulo
-          </Link>
-        </section>
-      ) : null}
-
-      <section className="space-y-3">
-        <h2 className="font-display text-2xl font-semibold">Novos neste caderno</h2>
-        <div className="grid gap-3 md:grid-cols-2">
-          {fresh.map((module) => (
-            <Link key={module.slug} to="/modulos/$slug" params={{ slug: module.slug }} className="card block">
-              <p className="text-xs font-bold text-primary">
-                {subjects[module.subject].label} · {module.kicker}
-              </p>
-              <h3 className="mt-1 text-lg font-semibold">{module.title}</h3>
-              <p className="text-sm text-muted">{read[module.slug] ? "Lido" : "Ainda não marcado"}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="grid gap-3 sm:grid-cols-2">
-        {subjectOrder.map((subject) => {
-          const list = modules.filter((module) => module.subject === subject);
-          const done = list.filter((module) => read[module.slug]).length;
-          return (
-            <Link key={subject} to="/modulos" className="card block">
-              <h2 className="font-display text-2xl font-semibold">{subjects[subject].label}</h2>
-              <p className="text-sm text-muted">{subjects[subject].blurb}</p>
-              <p className="mt-3 text-sm font-semibold">
-                {done} de {list.length} lidos
-              </p>
-              <div className="mt-2 h-2 overflow-hidden rounded-full bg-surface-2">
-                <div className="h-full bg-accent" style={{ width: `${(done / list.length) * 100}%` }} />
-              </div>
-            </Link>
-          );
-        })}
       </section>
 
       <p className="text-sm text-muted">{questions.length} perguntas no desafio, sem repetir dentro da mesma sessão.</p>
@@ -131,9 +143,9 @@ function Home() {
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div className="card">
+    <div className="p-5">
+      <p className="font-display text-4xl font-extrabold tracking-tight">{value}</p>
       <p className="text-sm text-muted">{label}</p>
-      <p className="font-display text-3xl font-semibold tracking-tight">{value}</p>
     </div>
   );
 }

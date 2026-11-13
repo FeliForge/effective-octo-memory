@@ -1,42 +1,70 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #f3f4fb;
+  --color-bg: #eef3f8;
   --color-surface: #ffffff;
-  --color-surface-2: #eef0f7;
-  --color-border: #e1e4f0;
-  --color-fg: #1b1d2a;
-  --color-muted: #5d647c;
-  --color-primary: #5346d6;
-  --color-primary-soft: #ece9ff;
-  --color-on-primary: #f7f6ff;
-  --color-accent: #0d7d68;
-  --color-accent-soft: #e5f6f1;
-  --color-danger: #b42338;
-  --color-danger-soft: #fde8ec;
-  --color-scrim: rgb(13 15 23 / 0.46);
-  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
-  --font-display: "Fraunces", Georgia, serif;
-  --radius-card: 1rem;
+  --color-surface-2: #e5ecf4;
+  --color-border: #cbd6e4;
+  --color-fg: #0f1a33;
+  --color-muted: #536079;
+  --color-primary: #2340d8;
+  --color-primary-soft: #e2e7ff;
+  --color-on-primary: #ffffff;
+  --color-accent: #0c7f58;
+  --color-accent-soft: #d9f3e8;
+  --color-danger: #bb1f47;
+  --color-danger-soft: #fde4ea;
+  --color-scrim: rgb(10 16 32 / 0.5);
+  --font-sans: "Figtree", "Segoe UI", sans-serif;
+  --font-display: "Bricolage Grotesque", "Segoe UI", sans-serif;
+  --radius-card: 0.875rem;
+}
+
+:root {
+  --grid: #dbe5f0;
+  --geo: #2b9a4f;
+  --geo-soft: #dff3e5;
+  --his: #c77f08;
+  --his-soft: #fbeed0;
+  --por: #d6336c;
+  --por-soft: #fce1ec;
+  --cie: #0a8db8;
+  --cie-soft: #d6f0f9;
+  --s: var(--color-primary);
+  --s-soft: var(--color-primary-soft);
 }
 
 html[data-theme="dark"] {
-  --color-bg: #0d0f17;
-  --color-surface: #161924;
-  --color-surface-2: #222638;
-  --color-border: #2d3348;
-  --color-fg: #eceefe;
-  --color-muted: #a4abc4;
-  --color-primary: #b1a6ff;
-  --color-primary-soft: #2a2550;
-  --color-on-primary: #1a1338;
-  --color-accent: #7ddec4;
-  --color-accent-soft: #14352e;
-  --color-danger: #ffb3bd;
-  --color-danger-soft: #3d1820;
-  --color-scrim: rgb(0 0 0 / 0.55);
+  --color-bg: #0b1120;
+  --color-surface: #131b2e;
+  --color-surface-2: #1c2640;
+  --color-border: #2b3858;
+  --color-fg: #e8edfb;
+  --color-muted: #9eabc8;
+  --color-primary: #8da2ff;
+  --color-primary-soft: #1f2a5c;
+  --color-on-primary: #0b1330;
+  --color-accent: #6fdbb2;
+  --color-accent-soft: #123a2d;
+  --color-danger: #ffa9bc;
+  --color-danger-soft: #3d1624;
+  --color-scrim: rgb(0 0 0 / 0.6);
+  --grid: #16203a;
+  --geo: #6fd18c;
+  --geo-soft: #123322;
+  --his: #f0b44c;
+  --his-soft: #3a2a0a;
+  --por: #ff86ae;
+  --por-soft: #401627;
+  --cie: #62cdee;
+  --cie-soft: #0d3341;
   color-scheme: dark;
 }
+
+[data-subject="geografia"] { --s: var(--geo); --s-soft: var(--geo-soft); }
+[data-subject="historia"] { --s: var(--his); --s-soft: var(--his-soft); }
+[data-subject="portugues"] { --s: var(--por); --s-soft: var(--por-soft); }
+[data-subject="ciencias"] { --s: var(--cie); --s-soft: var(--cie-soft); }
 
 @layer base {
   html {
@@ -45,10 +73,14 @@ html[data-theme="dark"] {
 
   body {
     margin: 0;
-    background: var(--color-bg);
+    background-color: var(--color-bg);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 28px 28px;
     color: var(--color-fg);
     font-family: var(--font-sans);
-    line-height: 1.55;
+    line-height: 1.6;
   }
 
   button:not(:disabled),
@@ -64,23 +96,90 @@ html[data-theme="dark"] {
   h1, h2, h3 {
     text-wrap: balance;
   }
+
+  h1, h2 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
 }
 
 @layer components {
   .card {
-    @apply rounded-2xl border border-border bg-surface p-5;
+    @apply rounded-[0.875rem] border border-border bg-surface p-5;
   }
 
   .btn-primary {
-    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-4 font-semibold text-on-primary disabled:cursor-not-allowed disabled:opacity-40;
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-primary px-4 font-bold text-on-primary disabled:cursor-not-allowed disabled:opacity-40;
+    box-shadow: 0 3px 0 color-mix(in oklab, var(--color-primary) 55%, black);
+  }
+
+  .btn-primary:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 color-mix(in oklab, var(--color-primary) 55%, black);
   }
 
   .btn-ghost {
-    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border bg-surface px-4 font-semibold;
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-border bg-surface px-4 font-semibold;
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--color-primary);
   }
 
   .btn-icon {
-    @apply inline-grid size-11 place-items-center rounded-xl border border-border bg-surface;
+    @apply inline-grid size-11 place-items-center rounded-lg border border-border bg-surface;
+  }
+
+  /* Capa de caderno: cada matéria tem a sua cor de marca-texto. */
+  .cover {
+    @apply relative block overflow-hidden rounded-[0.875rem] border border-border bg-surface p-5 pl-7;
+    box-shadow: 3px 3px 0 var(--color-border);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+
+  .cover::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.65rem;
+    background: var(--s);
+  }
+
+  .cover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--s);
+  }
+
+  .cover-num {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: color-mix(in oklab, var(--s) 78%, var(--color-fg));
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-md px-2 py-0.5 text-xs font-bold;
+    background: var(--s-soft);
+    color: color-mix(in oklab, var(--s) 70%, var(--color-fg));
+  }
+
+  .chip-plain {
+    @apply inline-flex items-center rounded-md bg-surface-2 px-2 py-0.5 text-xs font-semibold text-muted;
+  }
+
+  .subject-bar {
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--s-soft);
+    overflow: hidden;
+  }
+
+  .subject-bar > span {
+    display: block;
+    height: 100%;
+    background: var(--s);
+    border-radius: 999px;
   }
 }
 

@@ -78,15 +78,15 @@ export function PunnettWidget() {
         <dl className="mt-4 grid grid-cols-3 gap-2 text-center text-sm">
           <div className="rounded-xl bg-surface-2 px-2 py-3">
             <dt className="text-muted">Afetado</dt>
-            <dd className="font-display text-2xl font-semibold">{affected * 25}%</dd>
+            <dd className="text-2xl font-extrabold">{affected * 25}%</dd>
           </div>
           <div className="rounded-xl bg-surface-2 px-2 py-3">
             <dt className="text-muted">Portador</dt>
-            <dd className="font-display text-2xl font-semibold">{carriers * 25}%</dd>
+            <dd className="text-2xl font-extrabold">{carriers * 25}%</dd>
           </div>
           <div className="rounded-xl bg-surface-2 px-2 py-3">
             <dt className="text-muted">Sem o alelo</dt>
-            <dd className="font-display text-2xl font-semibold">{clear * 25}%</dd>
+            <dd className="text-2xl font-extrabold">{clear * 25}%</dd>
           </div>
         </dl>
       </div>
@@ -195,7 +195,7 @@ export function LightWidget() {
         />
       </label>
       <div className="rounded-2xl bg-surface-2 p-4">
-        <p className="font-display text-3xl font-semibold tracking-tight">{formatDuration(seconds)}</p>
+        <p className="text-3xl font-extrabold tracking-tight">{formatDuration(seconds)}</p>
         <p className="mt-2 text-sm text-muted">
           Δt = {km.toLocaleString("pt-BR")} km ÷ {LIGHT_SPEED.toLocaleString("pt-BR")} km/s ={" "}
           {seconds.toLocaleString("pt-BR", { maximumFractionDigits: 1 })} s
@@ -232,7 +232,7 @@ export function PhWidget() {
     <div className="space-y-4">
       <div>
         <div className="flex items-end justify-between gap-3">
-          <p className="font-display text-4xl font-semibold tracking-tight">{value.toFixed(1)}</p>
+          <p className="text-5xl font-extrabold leading-none">{value.toFixed(1)}</p>
           <p className="max-w-sm text-right text-sm text-muted">{describePh(value)}</p>
         </div>
         <input

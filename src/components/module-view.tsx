@@ -49,20 +49,20 @@ export function ModuleView({ module }: { module: Module }) {
   const subject = subjects[module.subject];
 
   return (
-    <article className="space-y-6">
+    <article data-subject={module.subject} className="space-y-6">
       <Link to="/modulos" className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary">
         <ArrowLeft className="size-4" aria-hidden="true" />
         Módulos
       </Link>
       <header className="space-y-3">
-        <div className="flex flex-wrap gap-2 text-xs font-bold">
-          <span className="rounded-full bg-primary-soft px-2 py-1 text-primary">{subject.label}</span>
-          <span className="rounded-full bg-surface-2 px-2 py-1">{module.kicker}</span>
-          <span className="rounded-full bg-surface-2 px-2 py-1">{module.notebook}</span>
-          {read ? <span className="rounded-full bg-accent-soft px-2 py-1 text-accent">Lido</span> : null}
+        <div className="flex flex-wrap gap-2">
+          <span className="chip">{subject.label}</span>
+          <span className="chip-plain">{module.kicker}</span>
+          <span className="chip-plain">{module.notebook}</span>
+          {read ? <span className="rounded-md bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">Lido</span> : null}
         </div>
-        <h1 className="font-display text-4xl font-semibold tracking-tight">{module.title}</h1>
-        <p className="max-w-3xl text-lg">{content.intro}</p>
+        <h1 className="text-4xl leading-none font-extrabold sm:text-5xl">{module.title}</h1>
+        <p className="max-w-3xl rounded-xl border-l-8 border-[var(--s)] bg-[var(--s-soft)] px-4 py-3 text-lg">{content.intro}</p>
         <p className="text-sm text-muted">Nesta aba: {formatSession(elapsed)}. O tempo só conta com a página visível.</p>
       </header>
 
@@ -80,7 +80,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.formula ? (
         <section className="card">
-          <h2 className="font-display text-2xl font-semibold">{content.formula.label}</h2>
+          <h2 className="text-2xl font-extrabold">{content.formula.label}</h2>
           <p className="mt-3 font-display text-3xl tracking-tight">{content.formula.expr}</p>
           <p className="mt-2 text-sm text-muted">{content.formula.note}</p>
         </section>
@@ -88,7 +88,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.widget ? (
         <section className="card space-y-3">
-          <h2 className="font-display text-2xl font-semibold">
+          <h2 className="text-2xl font-extrabold">
             {content.widget === "punnett" ? "Monte o quadro" : content.widget === "luz" ? "Calcule o tempo da luz" : "Leia a escala de pH"}
           </h2>
           {content.widget === "punnett" ? <PunnettWidget /> : null}
@@ -99,7 +99,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.wordBank ? (
         <section className="space-y-3">
-          <h2 className="font-display text-2xl font-semibold">Banco de palavras</h2>
+          <h2 className="text-2xl font-extrabold">Banco de palavras</h2>
           <div className="grid gap-3 sm:grid-cols-2">
             {content.wordBank.map(([term, meaning]) => (
               <div key={term} className="card">
@@ -114,10 +114,10 @@ export function ModuleView({ module }: { module: Module }) {
       <div className="space-y-4">
         {content.sections.map((section) => (
           <section key={section.title} className="card">
-            <h2 className="font-display text-2xl font-semibold">{section.title}</h2>
+            <h2 className="text-2xl font-extrabold">{section.title}</h2>
             <ul className="mt-3 space-y-2">
               {section.points.map((point) => (
-                <li key={point} className="border-l-2 border-primary pl-3">
+                <li key={point} className="border-l-4 border-[var(--s)] pl-3">
                   {point}
                 </li>
               ))}
@@ -128,7 +128,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.contrasts ? (
         <section className="space-y-3">
-          <h2 className="font-display text-2xl font-semibold">Fala e norma-padrão</h2>
+          <h2 className="text-2xl font-extrabold">Fala e norma-padrão</h2>
           <div className="space-y-3">
             {content.contrasts.map((row) => (
               <div key={row.norma} className="card grid gap-3 md:grid-cols-2">
@@ -149,7 +149,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.table ? (
         <section className="card space-y-3">
-          <h2 className="font-display text-2xl font-semibold">{content.table.caption}</h2>
+          <h2 className="text-2xl font-extrabold">{content.table.caption}</h2>
           <div className="overflow-x-auto">
             <table className="w-full min-w-xl text-left text-sm">
               <thead>
@@ -179,7 +179,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.syllabus && content.syllabus.length > 0 ? (
         <section className="card">
-          <h2 className="font-display text-2xl font-semibold">Roteiro do caderno</h2>
+          <h2 className="text-2xl font-extrabold">Roteiro do caderno</h2>
           <ul className="mt-3 space-y-2">
             {content.syllabus.map((item) => {
               const checked = checks.includes(item);
@@ -211,7 +211,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.glossary.length > 0 ? (
         <section className="card">
-          <h2 className="font-display text-2xl font-semibold">Glossário</h2>
+          <h2 className="text-2xl font-extrabold">Glossário</h2>
           <dl className="mt-3 space-y-3">
             {content.glossary.map(([term, meaning]) => (
               <div key={term}>
@@ -225,7 +225,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.faq.length > 0 ? (
         <section className="space-y-2">
-          <h2 className="font-display text-2xl font-semibold">Perguntas curtas</h2>
+          <h2 className="text-2xl font-extrabold">Perguntas curtas</h2>
           {content.faq.map(([question, answer]) => (
             <details key={question} className="card">
               <summary className="cursor-pointer font-semibold">{question}</summary>
@@ -237,7 +237,7 @@ export function ModuleView({ module }: { module: Module }) {
 
       {content.sources.length > 0 || content.videos.length > 0 ? (
         <section className="card">
-          <h2 className="font-display text-2xl font-semibold">Para conferir</h2>
+          <h2 className="text-2xl font-extrabold">Para conferir</h2>
           <ul className="mt-3 space-y-3">
             {[...content.videos, ...content.sources].map((link) => (
               <li key={link.url}>

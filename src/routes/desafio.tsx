@@ -38,7 +38,7 @@ function DesafioPage() {
   return (
     <div className="space-y-5">
       <header className="space-y-2">
-        <h1 className="font-display text-4xl font-semibold tracking-tight">Desafio</h1>
+        <h1 className="text-5xl font-extrabold leading-none">Desafio</h1>
         <p className="max-w-2xl text-muted">
           Até dez perguntas sorteadas, sem repetição na sessão. A explicação aparece logo depois da resposta.
         </p>
@@ -46,7 +46,7 @@ function DesafioPage() {
       <div className="flex gap-2 overflow-x-auto pb-1">
         <Link
           to="/desafio"
-          className={cn("min-h-11 shrink-0 rounded-full px-4 py-2 text-sm font-semibold", !module && !search.materia ? "bg-primary text-on-primary" : "bg-surface-2")}
+          className={cn("min-h-11 shrink-0 rounded-lg border border-border px-4 py-2 text-sm font-bold", !module && !search.materia ? "border-transparent bg-fg text-bg" : "bg-surface")}
         >
           Tudo
         </Link>
@@ -56,8 +56,8 @@ function DesafioPage() {
             to="/desafio"
             search={{ materia: subject }}
             className={cn(
-              "min-h-11 shrink-0 rounded-full px-4 py-2 text-sm font-semibold",
-              !module && search.materia === subject ? "bg-primary text-on-primary" : "bg-surface-2",
+              "min-h-11 shrink-0 rounded-lg border border-border px-4 py-2 text-sm font-bold",
+              !module && search.materia === subject ? "border-transparent bg-fg text-bg" : "bg-surface",
             )}
           >
             {subjects[subject].label}

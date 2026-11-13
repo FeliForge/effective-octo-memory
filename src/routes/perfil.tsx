@@ -21,7 +21,7 @@ function ProfilePage() {
   return (
     <div className="space-y-6">
       <header>
-        <h1 className="font-display text-4xl font-semibold tracking-tight">Perfil</h1>
+        <h1 className="text-5xl font-extrabold leading-none">Perfil</h1>
         <p className="text-muted">Tudo fica neste navegador. Não há conta nem cópia na nuvem.</p>
       </header>
       <section className="card space-y-3">
@@ -49,7 +49,7 @@ function ProfilePage() {
             : null;
           return (
             <article key={subject} className="card">
-              <h2 className="font-display text-2xl font-semibold">{subjects[subject].label}</h2>
+              <h2 className="text-2xl font-extrabold">{subjects[subject].label}</h2>
               <p className="text-sm text-muted">
                 {done} de {list.length} módulos lidos
               </p>

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Check, Search } from "lucide-react";
 import { modules, questionsFor } from "@/data";
 import { subjectOrder, subjects } from "@/data/subjects";
 import type { SubjectId } from "@/data/types";
@@ -24,27 +25,30 @@ function ModulesPage() {
   }, [filter, query]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <header className="space-y-2">
-        <h1 className="font-display text-4xl font-semibold tracking-tight">Módulos</h1>
-        <p className="max-w-2xl text-muted">
-          O material antigo de Geografia e História permanece. Português e Ciências estão nos cadernos novos.
+        <h1 className="text-5xl font-extrabold leading-none">Módulos</h1>
+        <p className="max-w-xl text-lg text-muted">
+          {modules.length} módulos em quatro matérias. Marque cada um como lido para acompanhar o caderno.
         </p>
       </header>
       <div className="flex flex-col gap-3">
-        <input
-          value={query}
-          onChange={(event) => setQuery(event.target.value)}
-          placeholder="Buscar por título"
-          aria-label="Buscar módulo"
-          className="min-h-11 rounded-xl border border-border bg-surface px-3"
-        />
+        <label className="relative block max-w-md">
+          <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted" aria-hidden="true" />
+          <input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Buscar por título"
+            aria-label="Buscar módulo"
+            className="min-h-11 w-full rounded-lg border border-border bg-surface pr-3 pl-9"
+          />
+        </label>
         <div className="flex gap-2 overflow-x-auto pb-1">
           <FilterChip active={filter === "todas"} onClick={() => setFilter("todas")}>
             Todas
           </FilterChip>
           {subjectOrder.map((subject) => (
-            <FilterChip key={subject} active={filter === subject} onClick={() => setFilter(subject)}>
+            <FilterChip key={subject} subject={subject} active={filter === subject} onClick={() => setFilter(subject)}>
               {subjects[subject].label}
             </FilterChip>
           ))}
@@ -53,18 +57,34 @@ function ModulesPage() {
       {subjectOrder.map((subject) => {
         const list = visible.filter((module) => module.subject === subject);
         if (!list.length) return null;
+        const done = modules.filter((module) => module.subject === subject && read[module.slug]).length;
+        const total = modules.filter((module) => module.subject === subject).length;
         return (
-          <section key={subject} className="space-y-3">
-            <h2 className="font-display text-2xl font-semibold">{subjects[subject].label}</h2>
-            <div className="grid gap-3 md:grid-cols-2">
+          <section key={subject} data-subject={subject} className="space-y-4">
+            <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1 border-b-2 border-[var(--s)] pb-2">
+              <h2 className="text-3xl font-extrabold">{subjects[subject].label}</h2>
+              <p className="text-sm font-semibold text-muted">
+                {done} de {total} lidos · {subjects[subject].blurb}
+              </p>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
               {list.map((module) => (
-                <Link key={module.slug} to="/modulos/$slug" params={{ slug: module.slug }} className="card block">
-                  <div className="flex items-center justify-between gap-2 text-xs font-bold">
-                    <span className="text-primary">{module.kicker}</span>
-                    {read[module.slug] ? <span className="text-accent">Lido</span> : <span className="text-muted">{module.notebook}</span>}
+                <Link key={module.slug} to="/modulos/$slug" params={{ slug: module.slug }} className="cover">
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="cover-num text-5xl" aria-label={module.kicker}>
+                      {module.number}
+                    </span>
+                    {read[module.slug] ? (
+                      <span className="chip">
+                        <Check className="mr-1 size-3" aria-hidden="true" />
+                        Lido
+                      </span>
+                    ) : (
+                      <span className="chip-plain">{module.notebook}</span>
+                    )}
                   </div>
-                  <h3 className="mt-2 text-lg font-semibold">{module.title}</h3>
-                  <p className="mt-2 text-sm text-muted">{questionsFor(module.slug).length} perguntas</p>
+                  <h3 className="mt-3 text-lg leading-snug font-bold">{module.title}</h3>
+                  <p className="mt-1 text-sm text-muted">{questionsFor(module.slug).length} perguntas</p>
                 </Link>
               ))}
             </div>
@@ -79,22 +99,26 @@ function ModulesPage() {
 function FilterChip({
   active,
   onClick,
+  subject,
   children,
 }: {
   active: boolean;
   onClick: () => void;
+  subject?: SubjectId;
   children: string;
 }) {
   return (
     <button
       type="button"
       aria-pressed={active}
+      data-subject={subject}
       onClick={onClick}
       className={cn(
-        "min-h-11 shrink-0 rounded-full px-4 text-sm font-semibold",
-        active ? "bg-primary text-on-primary" : "bg-surface-2",
+        "inline-flex min-h-11 shrink-0 items-center gap-2 rounded-lg border px-4 text-sm font-bold",
+        active ? "border-transparent bg-fg text-bg" : "border-border bg-surface",
       )}
     >
+      {subject ? <span aria-hidden="true" className="size-2.5 rounded-full bg-[var(--s)]" /> : null}
       {children}
     </button>
   );

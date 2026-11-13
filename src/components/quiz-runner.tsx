@@ -44,7 +44,7 @@ export function QuizRunner({
   if (!question || questions.length === 0) {
     return (
       <section className="card">
-        <h1 className="font-display text-3xl font-semibold">Sem perguntas neste filtro</h1>
+        <h1 className="text-3xl font-extrabold">Sem perguntas neste filtro</h1>
         <p className="text-muted">Escolha outra matéria ou volte para todos os módulos.</p>
       </section>
     );
@@ -98,7 +98,7 @@ export function QuizRunner({
     return (
       <section className="card space-y-4">
         <p className="text-sm font-semibold text-primary">{title}</p>
-        <h1 className="font-display text-4xl font-semibold tracking-tight">{pct}% de acertos</h1>
+        <h1 className="text-5xl font-extrabold leading-none">{pct}% de acertos</h1>
         <p className="text-muted">
           {correctCount} de {questions.length} nesta sessão. A explicação de cada erro fica no histórico da próxima rodada — vale refazer só o que escapou.
         </p>
@@ -114,7 +114,7 @@ export function QuizRunner({
     <section className="space-y-4">
       <header>
         <p className="text-sm font-semibold text-primary">{title}</p>
-        <h1 className="font-display text-3xl font-semibold tracking-tight">Pergunta {index + 1} de {questions.length}</h1>
+        <h1 className="text-3xl font-extrabold tracking-tight">Pergunta {index + 1} de {questions.length}</h1>
         <p className="text-muted">{subtitle}</p>
       </header>
       <article className="card space-y-4">

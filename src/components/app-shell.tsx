@@ -39,7 +39,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const readCount = Object.keys(read).length;
 
   return (
-    <div className="min-h-screen bg-bg text-fg">
+    <div className="min-h-screen text-fg">
       <div className="fixed inset-x-0 top-0 z-30 flex h-14 items-center gap-3 border-b border-border bg-surface px-4 lg:hidden">
         <button type="button" className="btn-icon" aria-label="Abrir menu" onClick={() => setOpen(true)}>
           <Menu className="size-5" />
@@ -59,7 +59,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       >
         <div className="mb-6 flex items-center justify-between px-2">
           <Link to="/" className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight">
-            <span className="grid size-8 place-items-center rounded-lg bg-primary text-sm font-bold text-on-primary">S</span>
+            <span className="grid size-9 -rotate-6 place-items-center rounded-lg bg-primary font-display text-lg font-extrabold text-on-primary">S</span>
             StudySphere
           </Link>
           <button type="button" className="btn-icon lg:hidden" aria-label="Fechar" onClick={() => setOpen(false)}>
@@ -75,8 +75,8 @@ export function AppShell({ children }: { children: ReactNode }) {
                 key={link.to}
                 to={link.to}
                 className={cn(
-                  "flex min-h-11 items-center gap-3 rounded-xl px-3 font-semibold",
-                  active ? "bg-primary-soft text-primary" : "text-muted",
+                  "flex min-h-11 items-center gap-3 rounded-lg px-3 font-semibold",
+                  active ? "bg-primary-soft text-primary shadow-[inset_4px_0_0_var(--color-primary)]" : "text-muted hover:bg-surface-2",
                 )}
               >
                 <Icon className="size-4" aria-hidden="true" />
@@ -86,9 +86,14 @@ export function AppShell({ children }: { children: ReactNode }) {
           })}
         </nav>
         <div className="mt-auto space-y-3 px-2">
-          <p className="text-sm text-muted">
-            {readCount} de {modules.length} módulos lidos
-          </p>
+          <div>
+            <p className="text-sm font-semibold">
+              {readCount} de {modules.length} módulos lidos
+            </p>
+            <div className="subject-bar mt-2">
+              <span style={{ width: `${modules.length ? (readCount / modules.length) * 100 : 0}%` }} />
+            </div>
+          </div>
           <button
             type="button"
             className="btn-ghost w-full justify-start"
