@@ -124,6 +124,14 @@ export function ModuleView({ module }: { module: Module }) {
                 </li>
               ))}
             </ul>
+            <button
+              type="button"
+              aria-pressed={checks.includes(section.title)}
+              onClick={() => toggleCheck(module.slug, section.title)}
+              className={checks.includes(section.title) ? "btn-ghost mt-4" : "btn-primary mt-4"}
+            >
+              {checks.includes(section.title) ? "Revisar esta seção novamente" : "Marcar seção como entendida"}
+            </button>
           </section>
         ))}
       </div>
