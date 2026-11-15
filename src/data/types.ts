@@ -1,4 +1,4 @@
-export type SubjectId = "geografia" | "historia" | "portugues" | "ciencias";
+export type SubjectId = "geografia" | "historia" | "portugues" | "ciencias" | "matematica";
 
 export type Difficulty = "basica" | "intermediaria" | "avancada";
 
