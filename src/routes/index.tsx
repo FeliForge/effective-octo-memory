@@ -45,7 +45,7 @@ function Home() {
           {name ? `Olá, ${name}. Vamos estudar?` : "Estude o caderno inteiro"}
         </h1>
         <p className="max-w-xl text-lg text-muted">
-          Prova bimestral de Geografia, História, Português e Ciências. Cada matéria tem a sua cor de marca-texto.
+          Prova bimestral de Geografia, História, Português, Ciências e Matemática. Cada matéria tem a sua cor de marca-texto.
         </p>
       </header>
 
