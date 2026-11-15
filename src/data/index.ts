@@ -5,6 +5,7 @@ import legacyContentJson from "./legacy-content.json";
 import legacyQuizJson from "./legacy-quiz.json";
 import { extras } from "./extra-content";
 import { extraQuiz } from "./extra-quiz";
+import { mathExtras, mathQuiz } from "./matematica";
 
 type LegacyModule = {
   slug: string;
@@ -72,6 +73,7 @@ export const modules: ModuleMeta[] = [
     kicker: `Módulo ${module.number}`,
   })),
   ...extras.map(({ content: _content, ...meta }) => meta),
+  ...mathExtras.map(({ content: _content, ...meta }) => meta),
 ].sort((a, b) => {
   const subjectDelta = subjectOrder.indexOf(a.subject) - subjectOrder.indexOf(b.subject);
   if (subjectDelta !== 0) return subjectDelta;
@@ -85,9 +87,10 @@ export const contentBySlug: Record<string, StudyContent> = {
     Object.entries(legacyContent).map(([slug, content]) => [slug, normalizeContent(content)]),
   ),
   ...Object.fromEntries(extras.map((item) => [item.slug, item.content])),
+  ...Object.fromEntries(mathExtras.map((item) => [item.slug, item.content])),
 };
 
-export const questions: Question[] = [...legacyQuiz, ...extraQuiz];
+export const questions: Question[] = [...legacyQuiz, ...extraQuiz, ...mathQuiz];
 
 export function getModule(slug: string) {
   return modules.find((module) => module.slug === slug) ?? null;
