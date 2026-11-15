@@ -73,7 +73,7 @@ function DesafioPage() {
             ? `${subjects[module.subject].label} · ${module.kicker}`
             : search.materia
               ? subjects[search.materia].blurb
-              : "Geografia, História, Português e Ciências"
+              : "Geografia, História, Português, Ciências e Matemática"
         }
       />
     </div>
