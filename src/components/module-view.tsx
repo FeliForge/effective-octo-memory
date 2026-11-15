@@ -25,7 +25,9 @@ export function ModuleView({ module }: { module: Module }) {
   const addSeconds = useProgress((state) => state.addSeconds);
   const setLastSlug = useProgress((state) => state.setLastSlug);
   const [elapsed, setElapsed] = useState(0);
-  const questionCount = questionsFor(module.slug).length;
+  const lessonQuestions = questionsFor(module.slug);
+  const questionCount = lessonQuestions.length;
+  const practiceQuestion = lessonQuestions[0];
 
   useEffect(() => {
     setLastSlug(module.slug);
@@ -125,6 +127,23 @@ export function ModuleView({ module }: { module: Module }) {
           </section>
         ))}
       </div>
+
+      {practiceQuestion ? (
+        <section className="card space-y-3 border-2 border-[var(--s)]">
+          <p className="text-xs font-bold uppercase tracking-wider text-muted">Aprendizagem ativa</p>
+          <h2 className="text-2xl font-extrabold">Teste se você entendeu</h2>
+          {practiceQuestion.context ? <p className="rounded-xl bg-surface-2 p-3 text-sm">{practiceQuestion.context}</p> : null}
+          <p className="text-lg font-semibold">{practiceQuestion.prompt}</p>
+          <ol className="grid gap-2 sm:grid-cols-2">
+            {practiceQuestion.options.map((option, index) => <li key={index} className="rounded-xl bg-surface-2 px-3 py-3 text-sm"><span className="mr-2 font-bold">{String.fromCharCode(65 + index)}.</span>{option}</li>)}
+          </ol>
+          <details className="rounded-xl border border-border p-3">
+            <summary className="min-h-8 cursor-pointer font-semibold">Ver resposta e explicação</summary>
+            <p className="mt-2 font-semibold text-accent">Resposta: {Array.isArray(practiceQuestion.answer) ? practiceQuestion.answer.map((answer) => String.fromCharCode(65 + answer)).join(", ") : String.fromCharCode(65 + practiceQuestion.answer)}</p>
+            <p className="mt-2 text-sm text-muted">{practiceQuestion.explanation}</p>
+          </details>
+        </section>
+      ) : null}
 
       {content.contrasts ? (
         <section className="space-y-3">
