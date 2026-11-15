@@ -64,65 +64,6 @@ export const mathExtras: MathPack[] = [
     }
   },
   {
-    slug: "resolucao-de-problemas",
-    subject: "matematica",
-    number: 28,
-    title: "Resolução de problemas",
-    notebook: "Caderno 3",
-    kicker: "Módulo 28",
-    fresh: true,
-    content: {
-      intro: "Resolver um problema matemático exige transformar informações escritas em relações que possam ser calculadas. O segredo é compreender o que se pede, organizar os dados, escolher uma estratégia e conferir se a resposta faz sentido no contexto.",
-      sections: [
-        { title: "1. Leia, organize e planeje", points: [
-          "Leia o enunciado inteiro e destaque a pergunta final. Não comece a calcular antes de entender a situação.",
-          "Anote os dados, as unidades e as condições. Diferencie informações necessárias de detalhes que não entram no cálculo.",
-          "Represente a incógnita por uma letra, como x, e descreva o que ela significa.",
-          "Faça um desenho, esquema, tabela ou diagrama quando isso ajudar a visualizar as relações."
-        ]},
-        { title: "2. Tradução da linguagem para a álgebra", points: [
-          "A soma de um número com 7: x + 7. O dobro de um número: 2x. A metade: x/2.",
-          "Três unidades a menos que o triplo de x: 3x - 3. O quadrado de x: x².",
-          "A expressão 'é igual a' geralmente indica o sinal de igualdade; 'no mínimo' indica maior ou igual; 'não ultrapassa' indica menor ou igual.",
-          "Transforme a frase em uma equação ou sistema e resolva mantendo o significado da incógnita."
-        ]},
-        { title: "3. Estratégias frequentes", points: [
-          "Equação: use quando há uma incógnita e uma condição de igualdade. Exemplo: x + 5 = 17, então x = 12.",
-          "Proporção: use quando duas razões representam a mesma relação. Em 3/5 = x/20, a multiplicação cruzada permite encontrar x = 12.",
-          "Porcentagem: p% de uma quantidade Q corresponde a (p/100)·Q. Um desconto de 15% deixa 85% do preço original.",
-          "Sistema de equações: use quando duas ou mais condições relacionam as mesmas incógnitas."
-        ]},
-        { title: "4. Exemplo resolvido: compra de ingressos", points: [
-          "Dois ingressos iguais custam R$ 54 ao todo. Seja x o preço de um ingresso.",
-          "A informação vira 2x = 54. Dividindo os dois lados por 2, obtemos x = 27.",
-          "Conferência: 2 · R$ 27 = R$ 54. Portanto, cada ingresso custa R$ 27."
-        ]},
-        { title: "5. Confira a resposta", points: [
-          "Substitua o resultado na equação original para verificar se a igualdade é verdadeira.",
-          "Observe se a unidade está correta: metros, reais, pessoas, litros etc.",
-          "Avalie se o resultado é possível. Uma quantidade de pessoas não deve ser negativa ou fracionária quando o contexto exige pessoas inteiras.",
-          "Responda com uma frase completa, retomando o que o problema perguntou."
-        ]}
-      ],
-      formula: { label: "Porcentagem", expr: "p% de Q = (p/100) · Q", note: "Para aumento de p%, multiplique por 1 + p/100; para desconto, por 1 - p/100." },
-      glossary: [
-        ["Incógnita", "Valor desconhecido que será representado por uma letra."],
-        ["Equação", "Igualdade matemática que contém uma ou mais incógnitas."],
-        ["Proporção", "Igualdade entre duas razões."],
-        ["Estimativa", "Cálculo aproximado usado para avaliar se o resultado é razoável."],
-        ["Sistema", "Conjunto de equações que precisam ser verdadeiras ao mesmo tempo."]
-      ],
-      faq: [
-        ["Como saber qual operação usar?", "Procure a relação descrita no enunciado. Traduza expressões como dobro, diferença, total, repartição e comparação antes de escolher a operação."],
-        ["Preciso escrever a conta?", "Sim. Registrar as etapas ajuda a acompanhar o raciocínio e permite localizar possíveis erros."],
-        ["E se o resultado não fizer sentido?", "Revise a interpretação, as unidades, a equação montada e as operações. Um resultado impossível costuma indicar que alguma etapa precisa ser corrigida."]
-      ],
-      videos: [],
-      sources: [],
-      syllabus: ["Identificar dados e incógnitas", "Traduzir frases em expressões e equações", "Resolver problemas com equações", "Aplicar proporções e porcentagens", "Validar e interpretar a resposta"]
-    }
-  },
-  {
     slug: "volumes-prismas-cilindros",
     subject: "matematica",
     number: 29,
@@ -367,10 +308,6 @@ export const mathQuiz: Question[] = [
   { id: "mat-func-2", subject: "matematica", module: "funcoes-dependencias-variaveis", difficulty: "basica", type: "multipla", prompt: "Se f(x) = 3x - 2, quanto vale f(4)?", options: ["8", "10", "12", "14"], answer: 1, explanation: "Substituindo x por 4: f(4) = 3 · 4 - 2 = 10." },
   { id: "mat-func-3", subject: "matematica", module: "funcoes-dependencias-variaveis", difficulty: "intermediaria", type: "multipla", prompt: "Na função y = 5x, qual é a variável dependente?", options: ["x", "5", "y", "Nenhuma"], answer: 2, explanation: "y depende do valor escolhido para x; por isso é a variável dependente." },
   { id: "mat-func-4", subject: "matematica", module: "funcoes-dependencias-variaveis", difficulty: "intermediaria", type: "multipla", prompt: "Se y = 24/x, com x positivo, o que acontece com y quando x dobra?", options: ["y dobra", "y fica igual", "y cai pela metade", "y quadruplica"], answer: 2, explanation: "É uma proporcionalidade inversa: dobrar x divide y por 2." },
-  { id: "mat-prob-1", subject: "matematica", module: "resolucao-de-problemas", difficulty: "basica", type: "multipla", prompt: "O dobro de um número somado a 7 é 19. Qual equação representa a frase?", options: ["2x - 7 = 19", "2(x + 7) = 19", "2x + 7 = 19", "x/2 + 7 = 19"], answer: 2, explanation: "O dobro é 2x; somado a 7 resulta em 19: 2x + 7 = 19." },
-  { id: "mat-prob-2", subject: "matematica", module: "resolucao-de-problemas", difficulty: "basica", type: "multipla", prompt: "Um produto de R$ 80 recebe desconto de 25%. Qual é o preço final?", options: ["R$ 20", "R$ 55", "R$ 60", "R$ 75"], answer: 2, explanation: "25% de 80 é 20. Preço final: 80 - 20 = R$ 60." },
-  { id: "mat-prob-3", subject: "matematica", module: "resolucao-de-problemas", difficulty: "intermediaria", type: "multipla", prompt: "Três caixas iguais contêm 45 livros ao todo. Quantos livros há em cada caixa?", options: ["12", "15", "18", "21"], answer: 1, explanation: "Se x é a quantidade por caixa, 3x = 45; portanto x = 15." },
-  { id: "mat-prob-4", subject: "matematica", module: "resolucao-de-problemas", difficulty: "intermediaria", type: "multipla", prompt: "Se 4 cadernos custam R$ 28, mantendo o mesmo preço por unidade, quanto custam 7 cadernos?", options: ["R$ 42", "R$ 45", "R$ 49", "R$ 56"], answer: 2, explanation: "Cada caderno custa 28/4 = R$ 7. Então 7 cadernos custam R$ 49." },
   { id: "mat-vol-1", subject: "matematica", module: "volumes-prismas-cilindros", difficulty: "basica", type: "multipla", prompt: "Um prisma tem área da base igual a 12 cm² e altura de 5 cm. Qual é seu volume?", options: ["17 cm³", "30 cm³", "60 cm³", "120 cm³"], answer: 2, explanation: "V = A_base · h = 12 · 5 = 60 cm³." },
   { id: "mat-vol-2", subject: "matematica", module: "volumes-prismas-cilindros", difficulty: "basica", type: "multipla", prompt: "Qual é a fórmula do volume de um cilindro de raio r e altura h?", options: ["πrh", "2πr + h", "πr²h", "πr² + h"], answer: 2, explanation: "A área da base circular é πr². Multiplicando pela altura: V = πr²h." },
   { id: "mat-vol-3", subject: "matematica", module: "volumes-prismas-cilindros", difficulty: "intermediaria", type: "multipla", prompt: "Um cilindro tem raio 3 cm e altura 4 cm. Qual é o volume exato?", options: ["12π cm³", "24π cm³", "36π cm³", "48π cm³"], answer: 2, explanation: "V = π · 3² · 4 = 36π cm³." },
