@@ -5,6 +5,7 @@ export const subjectOrder: SubjectId[] = [
   "historia",
   "portugues",
   "ciencias",
+  "matematica",
 ];
 
 export const subjects: Record<
@@ -26,6 +27,10 @@ export const subjects: Record<
   ciencias: {
     label: "Ciências",
     blurb: "Biologia, Física e Química",
+  },
+  matematica: {
+    label: "Matemática",
+    blurb: "Funções, álgebra, geometria e probabilidade",
   },
 };
 
