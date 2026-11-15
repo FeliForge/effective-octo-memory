@@ -30,6 +30,8 @@
   --por-soft: #fce1ec;
   --cie: #0a8db8;
   --cie-soft: #d6f0f9;
+  --mat: #7655c5;
+  --mat-soft: #eee7ff;
   --s: var(--color-primary);
   --s-soft: var(--color-primary-soft);
 }
@@ -58,6 +60,8 @@ html[data-theme="dark"] {
   --por-soft: #401627;
   --cie: #62cdee;
   --cie-soft: #0d3341;
+  --mat: #b69cff;
+  --mat-soft: #2c2148;
   color-scheme: dark;
 }
 
@@ -65,6 +69,7 @@ html[data-theme="dark"] {
 [data-subject="historia"] { --s: var(--his); --s-soft: var(--his-soft); }
 [data-subject="portugues"] { --s: var(--por); --s-soft: var(--por-soft); }
 [data-subject="ciencias"] { --s: var(--cie); --s-soft: var(--cie-soft); }
+[data-subject="matematica"] { --s: var(--mat); --s-soft: var(--mat-soft); }
 
 @layer base {
   html {
