@@ -1,6 +1,5 @@
-node_modules
-.vercel
-.netlify
-.tanstack
-dist
-.env*
+node_modules/
+.project_id
+.github_repo
+.env
+.env.*
