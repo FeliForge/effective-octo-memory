@@ -9,15 +9,21 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as DesafioRouteImport } from './routes/desafio'
-import { Route as ModulosRouteImport } from './routes/modulos'
 import { Route as PerfilRouteImport } from './routes/perfil'
-import { Route as ModulosSlugRouteImport } from './routes/modulos_.$slug'
+import { Route as LigasRouteImport } from './routes/ligas'
+import { Route as DesafioRouteImport } from './routes/desafio'
+import { Route as IndexRouteImport } from './routes/index'
+import { Route as ModulosIndexRouteImport } from './routes/modulos/index'
+import { Route as ModulosSlugRouteImport } from './routes/modulos/$slug'
 
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const PerfilRoute = PerfilRouteImport.update({
+  id: '/perfil',
+  path: '/perfil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LigasRoute = LigasRouteImport.update({
+  id: '/ligas',
+  path: '/ligas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DesafioRoute = DesafioRouteImport.update({
@@ -25,18 +31,18 @@ const DesafioRoute = DesafioRouteImport.update({
   path: '/desafio',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ModulosRoute = ModulosRouteImport.update({
-  id: '/modulos',
-  path: '/modulos',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PerfilRoute = PerfilRouteImport.update({
-  id: '/perfil',
-  path: '/perfil',
+const ModulosIndexRoute = ModulosIndexRouteImport.update({
+  id: '/modulos/',
+  path: '/modulos/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ModulosSlugRoute = ModulosSlugRouteImport.update({
-  id: '/modulos_/$slug',
+  id: '/modulos/$slug',
   path: '/modulos/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
@@ -44,48 +50,59 @@ const ModulosSlugRoute = ModulosSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/desafio': typeof DesafioRoute
-  '/modulos': typeof ModulosRoute
+  '/ligas': typeof LigasRoute
   '/perfil': typeof PerfilRoute
   '/modulos/$slug': typeof ModulosSlugRoute
+  '/modulos/': typeof ModulosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/desafio': typeof DesafioRoute
-  '/modulos': typeof ModulosRoute
+  '/ligas': typeof LigasRoute
   '/perfil': typeof PerfilRoute
   '/modulos/$slug': typeof ModulosSlugRoute
+  '/modulos': typeof ModulosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/desafio': typeof DesafioRoute
-  '/modulos': typeof ModulosRoute
+  '/ligas': typeof LigasRoute
   '/perfil': typeof PerfilRoute
-  '/modulos_/$slug': typeof ModulosSlugRoute
+  '/modulos/$slug': typeof ModulosSlugRoute
+  '/modulos/': typeof ModulosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/desafio' | '/modulos' | '/perfil' | '/modulos/$slug'
+  fullPaths: '/' | '/desafio' | '/ligas' | '/perfil' | '/modulos/$slug' | '/modulos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/desafio' | '/modulos' | '/perfil' | '/modulos/$slug'
-  id: '__root__' | '/' | '/desafio' | '/modulos' | '/perfil' | '/modulos_/$slug'
+  to: '/' | '/desafio' | '/ligas' | '/perfil' | '/modulos/$slug' | '/modulos'
+  id: '__root__' | '/' | '/desafio' | '/ligas' | '/perfil' | '/modulos/$slug' | '/modulos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DesafioRoute: typeof DesafioRoute
-  ModulosRoute: typeof ModulosRoute
+  LigasRoute: typeof LigasRoute
   PerfilRoute: typeof PerfilRoute
   ModulosSlugRoute: typeof ModulosSlugRoute
+  ModulosIndexRoute: typeof ModulosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/perfil': {
+      id: '/perfil'
+      path: '/perfil'
+      fullPath: '/perfil'
+      preLoaderRoute: typeof PerfilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ligas': {
+      id: '/ligas'
+      path: '/ligas'
+      fullPath: '/ligas'
+      preLoaderRoute: typeof LigasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/desafio': {
@@ -95,22 +112,22 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DesafioRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/modulos': {
-      id: '/modulos'
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modulos/': {
+      id: '/modulos/'
       path: '/modulos'
-      fullPath: '/modulos'
-      preLoaderRoute: typeof ModulosRouteImport
+      fullPath: '/modulos/'
+      preLoaderRoute: typeof ModulosIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/perfil': {
-      id: '/perfil'
-      path: '/perfil'
-      fullPath: '/perfil'
-      preLoaderRoute: typeof PerfilRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/modulos_/$slug': {
-      id: '/modulos_/$slug'
+    '/modulos/$slug': {
+      id: '/modulos/$slug'
       path: '/modulos/$slug'
       fullPath: '/modulos/$slug'
       preLoaderRoute: typeof ModulosSlugRouteImport
@@ -122,19 +139,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DesafioRoute: DesafioRoute,
-  ModulosRoute: ModulosRoute,
+  LigasRoute: LigasRoute,
   PerfilRoute: PerfilRoute,
   ModulosSlugRoute: ModulosSlugRoute,
+  ModulosIndexRoute: ModulosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
